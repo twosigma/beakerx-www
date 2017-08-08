@@ -1,0 +1,22 @@
+<header class="globalHeader">
+    <div class="globalHeader_item">
+      <a href="/" class="globalHeader__branding">
+        <img src="{{ site.url }}/static/img/twosigma.png"
+           alt="Two Sigma"
+           class="globalHeader__logo">
+      </a>
+    </div>
+    <nav class="globalHeader_item globalHeader__nav">
+      <ul class="globalHeader__menu">
+          {% for link in site.data.header.links %}
+              <li class="globalHeader__menu__item">
+                  <a href="{{ link.url }}"
+                     class="globalHeader__menu__link"
+                     target="_blank">
+                     {{ link.title }}
+                   </a>
+              </li>
+          {% endfor %}
+      </ul>
+    </nav>
+</header>

@@ -1,0 +1,69 @@
+<div class="projectHeader">
+  <div class="projectHeader__section js--preNav">
+    <header class="projectHeader__lead projectHeader__section__inner">
+      {% if project.logo %}
+      <span class="projectHeader__logo">
+        {% include _icons/{{ project.logo }} %}
+      </span>
+      {% else %}
+      <span class="projectHeader__graphic">
+        {% include _icons/{{ project.icon }} %}
+      </span>
+      <h2 class="projectHeader__title"><a href="/{{ page.project | slugify }}">{{ project.title }}</a></h2>
+      {% endif %}
+      <span class="projectHeader__toggle js--dropdown__open">
+        {% include _icons/menu.svg %}
+      </span>
+      <span class="projectHeader__toggle js--dropdown__close">
+        {% include _icons/close.svg %}
+      </span>
+    </header>
+    <div class="pageHeader__content projectHeader__section__inner">
+      <div class="projectMeta">
+        {% for repository in site.github.public_repositories %}
+          {% if project.github.project == repository.name %}
+          <span class="projectMeta__item github">
+            {% include _icons/github.svg %}
+          </span>
+          <span class="projectMeta__item star">
+            {% include _icons/star.svg %}
+            {{ repository.stargazers_count }}
+          </span>
+          <span class="projectMeta__item fork">
+            {% include _icons/fork.svg %}
+            {{ repository.forks_count }}
+          </span>
+          {% endif %}
+        {% endfor %}
+        {% if project.twitter %}
+        <span class="projectMeta__item twitter">
+          <a href="https://twitter.com/{{ project.twitter }}">{% include _icons/twitter.svg %}</a>
+        </span>
+        {% endif %}
+      </div>
+      <p class="projectHeader--optional projectHeader__text">{{ project.text }}</p>
+    </div>
+  </div>
+  {% if project.header %}
+    {% if page.order == 1 %}
+    <div class="projectHeader__section projectHeader--aside js--postNav">
+    {% else %}
+    <div class="projectHeader__section projectHeader--optional projectHeader--aside">
+    {% endif %}
+  {% else %}
+  <div class="projectHeader__section projectHeader--optional projectHeader--aside projectHeader--col">
+  {% endif %}
+
+    {% for section in project.header %}
+    <div class="projectHeader__item projectHeader__section__inner">
+      <header>
+        {% if section.icon %}
+        <span class="ico">{% include _icons/{{ section.icon }} %}</span>
+        {% endif %}
+        <h2>{{ section.title }}</h2>
+      </header>
+      {{ section.content | markdownify }}
+    </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<!-- sample change -->
+<footer class="globalFooter">
+    <div class="globalFooter__social">
+      <ul>
+        {% for link in site.data.footer.links %}
+            <li>
+              <a href="{{ link.url }}" target="_blank">
+                {% include _icons/{{ link.icon }} %}
+              </a>
+            </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="globalFooter__legal">
+        {{ site.data.footer.legal | markdownify }}
+        <p>
+            &copy; {{ 'now' | date: "%Y" }} TwoSigma Investments, LP. <br>
+            ALL RIGHTS RESERVED | <a href="https://www.twosigma.com/legal-disclosure/privacy-policy">Privacy Policy</a>
+        </p>
+    </div>
+</footer>

@@ -1,0 +1,175 @@
+.pageSubSection--visual {
+
+  h4 {
+    @include size('font-size', 20px);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding: rem(24px) rem(20px);
+
+    @include breakpoint(desktop) {
+      @include size('font-size', 16px);
+      @include size('padding', 20px);
+      background-color: $color-orange-dark;
+    }
+  }
+
+  ul {
+    background-image: url(../img/two-sigma-office.jpg);
+    background-repeat: no-repeat;
+    background-position: 15% bottom;
+    background-size: cover;
+    display: block;
+
+    @include breakpoint(desktop) {
+      @include size('height', 430px);
+      display: flex;
+      // flex-wrap: wrap;
+      background-position: center;
+    }
+  }
+
+  li {
+    border-color: $color-orange-light;
+    border-style: solid;
+    border-width: 0;
+    width: auto;
+    @include size('border-bottom-width', 20px);
+
+    @include breakpoint(desktop) {
+      @include size('border-right-width', 20px);
+      border-bottom-width: 0;
+      width: 25%;
+      height: 100%;
+    }
+  }
+
+  li:first-child {
+
+    @include breakpoint(desktop) {
+      @include size('border-top-width', 75px);
+    }
+
+    h4 {
+      @include breakpoint(desktop) {
+        margin-top: 30%;
+      }
+    }
+  }
+
+  li:nth-child(2) {
+
+    @include breakpoint(desktop) {
+      @include size('border-top-width', 20px);
+    }
+
+    h4 {
+      @include breakpoint(desktop) {
+        margin-top: 70%;
+      }
+    }
+  }
+
+  li:nth-child(3) {
+
+    @include breakpoint(desktop) {
+      @include size('border-top-width', 150px);
+    }
+    h4 {
+      @include breakpoint(desktop) {
+        margin-top: 70%;
+      }
+    }
+  }
+
+  li:nth-child(4) {
+    @include breakpoint(desktop) {
+      @include size('border-top-width', 5px);
+      border-right: 0;
+    }
+
+    h4 {
+      @include breakpoint(desktop) {
+        margin-top: 100%;
+      }
+    }
+  }
+}
+
+.teams__content {
+  overflow: hidden;
+  padding: 0;
+  display: none;
+
+  background-color: rgba(228, 80, 12, .9);
+  @include size('font-size', 22px);
+
+  @include breakpoint(desktop) {
+    @include size('font-size', 16px);
+    opacity: 0;
+    height: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  p {
+    font-size: inherit;
+    color: inherit;
+    font-weight: $font-extra-bold;
+    margin-top: 0;
+    @include size('line-height', 26px);
+
+    @include breakpoint(desktop) {
+      @include size('line-height', 22px);
+    }
+  }
+}
+
+.teams__expandable:hover {
+  .teams__content {
+    @include breakpoint(desktop) {
+      height: 100%;
+      transition: opacity 0.5s ease-out;
+      opacity: 1;
+      display: flex;
+    }
+  }
+
+  .teams__header {
+    @include breakpoint(desktop) {
+      display: none;
+    }
+  }
+}
+
+.teams__text {
+  @include size('padding', 30px);
+
+  @include breakpoint(desktop) {
+    @include size('padding', 20px);
+    @include size('margin-bottom', 40px);
+  }
+}
+
+.teams__button {
+  float: right;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+
+  svg {
+    @include size('width', 20px);
+    fill: $color-white;
+  }
+
+  @include breakpoint(desktop) {
+    display: none;
+  }
+
+  &--expand {
+    padding: rem(20px) rem(15px);
+  }
+
+  &--collapse {
+    padding: rem(10px) rem(15px);
+    @include size('margin-top', -10px);
+  }
+}

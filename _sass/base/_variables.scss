@@ -1,0 +1,35 @@
+$color-white: #FFF;
+$color-charcoal: #4b4f51;
+$color-dark-gray: #969696;
+$color-gray: #c3c3c3;
+$color-xlight-gray: #f6f6f6;
+$color-black: #000;
+$color-orange: #e46017;
+$color-orange-light: #e37222;
+$color-orange-dark: #e44f0c;
+
+$breakpoints: (
+  "phone-portrait": 321px,
+  "phone-landscape": 481px,
+  "tablet-portrait": 601px,
+  "tablet-landscape": 769px,
+  "desktop": 961px,
+  "desktop-large": 1280px,
+);
+
+$breakpoint-directions: (
+  "min": "min-width",
+  "max": "max-width"
+);
+
+$default-breakpoint: root;
+$current-breakpoint: $default-breakpoint;
+
+$font-primary: 'Lato', sans-serif;
+$font-secondary: 'Roboto Mono', monospace;
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+$font-extra-bold: 900;
+
+$arrow-right: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTEzLjI5MyA3LjI5M2MtMC4zOTEgMC4zOTEtMC4zOTEgMS4wMjMgMCAxLjQxNGwyLjI5MyAyLjI5M2gtNy41ODZjLTAuNTUyIDAtMSAwLjQ0OC0xIDFzMC40NDggMSAxIDFoNy41ODZsLTIuMjkzIDIuMjkzYy0wLjM5MSAwLjM5MS0wLjM5MSAxLjAyMyAwIDEuNDE0IDAuMTk1IDAuMTk1IDAuNDUxIDAuMjkzIDAuNzA3IDAuMjkzczAuNTEyLTAuMDk4IDAuNzA3LTAuMjkzbDQuNzA3LTQuNzA3LTQuNzA3LTQuNzA3Yy0wLjM5MS0wLjM5MS0xLjAyMy0wLjM5MS0xLjQxNCAweiI+PC9wYXRoPjwvc3ZnPg==);

@@ -1,0 +1,50 @@
+.globalHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-orange-light;
+  @include size('padding', 30px);
+
+  @include breakpoint(tablet-landscape) {
+    @include size('padding-left', 130px);
+    @include size('padding-right', 130px);
+  }
+}
+
+.globalHeader__branding {
+  display: block;
+}
+
+.globalHeader__logo {
+  @include size('width', 150px);
+
+  @include breakpoint(tablet-landscape) {
+    @include size('width', 230px);
+  }
+}
+
+.globalHeader__nav {
+  font-weight: $font-bold;
+  text-transform: uppercase;
+}
+
+.globalHeader__menu {
+  list-style: none;
+  padding: 0;
+}
+
+.globalHeader__menu__item {
+  @include size('font-size', 12px);
+  display: inline-block;
+  margin: 0 rem(10px);
+
+  @include breakpoint(tablet-landscape) {
+    @include size('font-size', 16px);
+    margin: 0 rem(35px);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

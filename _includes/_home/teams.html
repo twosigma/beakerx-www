@@ -1,0 +1,33 @@
+<section class="pageSubSection pageSubSection--visual">
+  <h3 class="pageSubSection__title">{{ site.data.teams.header }}</h3>
+    <ul>
+      {% for team in site.data.teams.teams %}
+        {% if team.text %}
+            <li class="teams__expandable" id="block-{% increment counter %}"  data-js-component="teamsExpandable">
+              <div class="teams__header">
+                <span class="teams__button teams__button--expand">
+                    {% include _icons/{{ site.data.teams.icons.expand }} %}
+                </span>
+                <h4 class="teams__title">{{ team.title }}</h4>
+              </div>
+        {% else %}
+            <li>
+              <h4 class="teams__title">
+                <a href="{{ team.url }}">{{ team.title }}</a>
+              </h4>
+        {% endif %}
+                {% if team.text %}
+                <div class="teams__content">
+                  <span class="teams__button teams__button--collapse">
+                    {% include _icons/{{ site.data.teams.icons.collapse }} %}
+                  </span>
+                  <div class="teams__text">
+                    <p>{{ team.text }}</p>
+                    <a href="{{ team.url }}" class="cta__link">See All Jobs</a>
+                  </div>
+                </div>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</section>

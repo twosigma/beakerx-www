@@ -1,0 +1,12 @@
+<nav class="mainNav pageHeader__dropdown">
+  <ul>
+    {% assign sorted_pages = site.projects | sort:"order" %}
+    {% for item in sorted_pages %}
+      {% if item.project == page.project %}
+      <li {% if item.url == page.url %}class="active"{% endif %}>
+        <a href="{{ item.url }}">{{ item.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,0 +1,197 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin breakpoint($breakpoint, $type: min) {
+  // Get the width from the keyword `$breakpoint`
+  // Or `null` if the keyword doesn't exist in `$breakpoints` map
+  $value: map-get($breakpoints, $breakpoint);
+  $direction: map-get($breakpoint-directions, $type);
+
+  // If `$breakpoint` exists as a key in `$breakpoints`
+  @if $value != null {
+
+    // If '$type' exists as a key in '$breakpoint-directions'
+    @if $direction != null {
+      // Update `$current-breakpoint`
+      $current-breakpoint: $breakpoint !global;
+      // Open a media query block
+      @media (#{$direction}: $value) {
+        // Let the user dump content
+        @content;
+      }
+      // Then reset `$current-breakpoint` to `$default-breakpoint` (root)
+      $current-breakpoint: $default-breakpoint !global;
+    }
+    @else {
+      @warn "Invalid breakpoint direction `#{$type}`.";
+    }
+  }
+
+    // If `$breakpoint` doesn't exist in `$breakpoints`,
+    // Warn the user and do nothing
+  @else {
+    @warn "Invalid breakpoint `#{$breakpoint}`.";
+  }
+
+}
+
+// Aspect Ratio
+@mixin aspectRatio($x, $y, $innerSelector) {
+  position: relative;
+  &:after {
+      padding-top: percentage( $y / $x );
+      display: block;
+      content: '';
+  }
+  > #{$innerSelector} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@function rem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+@mixin size($unit, $size) {
+  #{$unit}: $size;
+  #{$unit}: rem($size);
+}
+
+@mixin bar($direction, $size:20px) {
+  @if $direction != null {
+    border-#{ $direction }: #{ $size / 1.5 } solid $color-orange-dark;
+    border-#{ $direction }: rem($size / 1.5) solid $color-orange-dark;
+
+    @include breakpoint(phone-landscape) {
+      border-#{ $direction }: $size solid $color-orange-dark;
+      border-#{ $direction }: rem($size) solid $color-orange-dark;
+    }
+  } @else {
+    border: $size solid $color-orange-dark;
+    border: rem($size) solid $color-orange-dark;
+  }
+}
+
+@mixin sectionBorder {
+  border-top: 1px solid $color-white;
+  position: relative;
+  padding-top: 40px;
+  margin-top: -30px;
+
+  &:before, &:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  &:before {
+    top: 0;
+    left: 0;
+    border-width: 20px 20px 0 20px;
+    border-color: $color-white transparent transparent transparent;
+
+    @include breakpoint(phone-landscape) {
+      border-width: 30px 30px 0 30px;
+    }
+  }
+
+  &:after {
+    top: -3px;
+    left: -1px;
+    border-width: 21px 21px 0 21px;
+    border-color: $color-orange-light transparent transparent transparent;
+    @include breakpoint(phone-landscape) {
+      border-width: 31px 31px 0 31px;
+    }
+  }
+}
+
+@mixin list($type:ul) {
+  padding: 0 0 0 rem(75px);
+  list-style: none;
+  @include size('line-height', 40px);
+
+  li {
+      padding: 0 0 0 rem(22px);
+      position: relative;
+      &:before {
+        color: $color-orange;
+        display: block;
+        position: absolute;
+      }
+
+      ul, ol {
+        margin-bottom: 0;
+      }
+
+      ul li {
+        &:before {
+          content: '\00ba';
+        }
+      }
+  }
+
+  @if $type == ol {
+    counter-reset: section;
+    li {
+      &:before {
+        left: -4px;
+        counter-increment: section;
+        content: counter(section) ". ";
+        font-weight: $font-bold;
+      }
+    }
+  }
+
+  @else {
+    li {
+      &:before {
+        left: 0;
+        content: '\25AA';
+        font-size: 20px;
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
+
+// Aspect Ratio
+@mixin aspectRatio($x, $y, $innerSelector) {
+  position: relative;
+  &:after {
+      padding-top: percentage( $y / $x );
+      display: block;
+      content: '';
+  }
+  > #{$innerSelector} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@mixin underlined($color) {
+  text-decoration: none;
+  display: inline-block;
+  border-bottom: 1px solid $color;
+  line-height: 1.3;
+
+  &:hover {
+    border-color: transparent;
+  }
+}

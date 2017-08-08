@@ -1,0 +1,76 @@
+---
+header: A few of our projects<br/> you should check out
+projects:
+  - title: beakerX
+    text: > #
+          Beaker is a notebook-style development environment
+          for working interactively with large and complex datasets.
+          Its plugin-based architecture allows you to
+          switch between languages.
+    github:
+        user: twosigma
+        project: beakerx
+    icon: Beaker.svg
+    logo: beakerx-logo.svg
+    twitter: twosigma
+    header:
+      - section:
+        title: Install beakerX
+        icon: terminal.svg
+        content: > #
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor [incididunt ut labore](https://www.twosigma.com)
+          magna aliqua.
+          `conda install -c conda-forge beakerx Jupiter notebook`
+
+      - section:
+        title: Build with Docker
+        icon: docker-logo.svg
+        content: > #
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor [incididunt ut labore](https://www.twosigma.com)
+          magna aliqua.
+
+  - title: Satellite
+    text: > #
+          We built Satellite to monitor, alert on, and
+          self-heal Mesos clusters.
+    github:
+        user: twosigma
+        project: satellite
+    icon: Satellite.svg
+
+  - title: Cook
+    text: > #
+          Cook is our dynamic fair job scheduler on Mesos for
+          batch workloads and Spark.
+    github:
+        user: twosigma
+        project: Cook
+    icon: Cook.svg
+
+  - title: Flint
+    text: > #
+          Flint is our project that provides
+          time-series analysis in Spark.
+    github:
+        user: twosigma
+        project: flint
+    icon: Flint.svg
+
+  - title: git-meta
+    text: > #
+          Our project that lets you effectively manage
+          many repositories with git submodules.
+    github:
+        user: twosigma
+        project: git-meta
+    icon: Git-meta.svg
+
+  - title: Halite
+    text: > #
+          Halite is our artificial intelligence programming challenge,
+          designed for our annual summer programming competition. The most
+          recent competition was run with the help of Cornell Tech.
+    link: https://halite.io
+    icon: Halite.svg

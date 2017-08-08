@@ -1,0 +1,119 @@
+.featured {
+  @include breakpoint(tablet-landscape) {
+    @include size('padding-bottom', 10px);
+  }
+}
+.featuredProject {
+  @include breakpoint (tablet-landscape) {
+    transform: translateY(#{ rem(-34px) });
+  }
+
+  .projectMeta__item {
+    @include size('font-size', 16px);
+
+    @include breakpoint (tablet-landscape) {
+      @include size('font-size', 20px);
+    }
+  }
+
+  .projectMeta__item svg {
+    @include size('width', 16px);
+
+    @include breakpoint(tablet-landscape) {
+      @include size('width', 20px);
+    }
+  }
+
+  .projectMeta__item:last-child svg {
+    @include breakpoint(tablet-landscape) {
+      @include size('vertical-align', -5px);
+    }
+  }
+
+  p {
+    @include size('font-size', 16px);
+    @include size('line-height', 26px);
+    font-weight: $font-bold;
+
+    @include breakpoint(tablet-landscape) {
+      @include size('font-size', 18px);
+    }
+  }
+}
+
+.featuredProject_header {
+  svg {
+    @include size('width', 120px);
+
+    @include breakpoint(tablet-landscape) {
+      @include size('width', 180px);
+    }
+  }
+}
+
+.featuredProject_row {
+  @include breakpoint(tablet-landscape) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--unbreak {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.featuredProject_item {
+  @include size('margin-bottom', 30px);
+
+  @include breakpoint(tablet-landscape) {
+    margin: 0;
+    width: calc(50% - #{ rem(10px) });
+  }
+}
+
+.featuredProject__title {
+  @include size('font-size', 75px);
+  @include size('text-indent', -7px);
+  font-weight: $font-regular;
+  margin: 0 rem(20px) 0 0;
+
+  @include breakpoint(tablet-landscape) {
+    @include size('font-size', 125px);
+  }
+}
+
+.featuredProject__link {
+  @include size('margin-left', 5px);
+  white-space: nowrap;
+  text-decoration: underline;
+}
+
+.featuredProject__cta {
+  margin: rem(20px) 0;
+  text-align: center;
+
+  @include breakpoint(tablet-landscape) {
+    text-align: left;
+  }
+}
+
+.cta-button {
+  @include size('font-size', 14px);
+  @include size('letter-spacing', 1px);
+  font-weight: $font-extra-bold;
+  border: 1px solid $color-white;
+  padding: rem(10px) rem(30px);
+  text-transform: uppercase;
+
+  &:hover {
+    border-color: $color-charcoal;
+  }
+
+  &._safari_border {
+    border-left-width: 2px;
+    border-right-width: 2px;
+  }
+}

@@ -1,0 +1,12 @@
+<section class="pageSection">
+    <header class="pageSection__header pageSection--row">
+      <h2 class="pageSection__title">{{ site.data.what_we_do.header }}</h2>
+      <div class="pageSection__text">
+        {{ site.data.what_we_do.text | markdownify }}
+      </div>
+    </header>
+    <div class="pageSection__content">
+        {% include _home/teams.html %}
+        {% include _home/insights.html %}
+    </div>
+</section>

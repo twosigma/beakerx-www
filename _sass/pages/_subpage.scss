@@ -1,0 +1,130 @@
+%heading {
+  font-weight: $font-bold;
+  @include size('margin-top', 16px);
+}
+
+%p {
+  @include size('font-size', 18px);
+  color: inherit;
+}
+
+%h1 {
+  @include size('font-size', 20px);
+  @include size('letter-spacing', 1px);
+  @include size('margin-top', 16px);
+  color: $color-dark-gray;
+  font-weight: $font-extra-bold;
+}
+
+%h2 {
+  @include size('font-size', 30px);
+  margin: rem(16px) 0;
+
+  @include breakpoint(phone-landscape) {
+    @include size('font-size', 46px);
+    margin: rem(23px) 0;
+  }
+}
+
+%h3 {
+  @include size('font-size', 26px);
+  @extend %heading;
+}
+
+%h4 {
+  @include size('font-size', 18px);
+  @extend %heading;
+
+  @include breakpoint(phone-landscape) {
+    @include size('font-size', 20px);
+  }
+}
+
+%h5 {
+  @include size('font-size', 18px);
+  @extend %heading;
+  @include size('line-height', 30px);
+}
+
+%h6 {
+  @include size('font-size', 16px);
+  @extend %heading;
+}
+
+.subpage {
+  color: $color-charcoal;
+  background: $color-white;
+  padding: 40px 0;
+
+  @include breakpoint(desktop) {
+    padding: 100px 0;
+  }
+
+  h1 {
+    @extend %h1;
+  }
+
+  h2 {
+    @extend %h2;
+
+    @include breakpoint(desktop) {
+      position: relative;
+      text-indent: -2px;
+    }
+
+    &:before {
+      @include breakpoint(desktop) {
+        content: "";
+        background-color: $color-orange-light;
+        display: block;
+        width: 7px;
+        height: 30px;
+        position: absolute;
+        left: -25px;
+        top: calc(50% - 15px);
+      }
+    }
+  }
+
+  h3 {
+    @extend %h3;
+  }
+
+  h4 {
+    @extend %h4;
+  }
+
+  h5 {
+    @extend %h5;
+  }
+
+  h6 {
+    @extend %h6;
+  }
+
+  p {
+    @extend %p;
+  }
+
+  ul {
+    @include list(ul);
+  }
+
+  ol {
+    @include list(ol);
+  }
+
+  pre,
+  code {
+    background-color: $color-xlight-gray;
+    border-color: $color-gray;
+  }
+
+  .pageSection {
+    @include breakpoint(tablet-landscape) {
+      max-width: 675px;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+}

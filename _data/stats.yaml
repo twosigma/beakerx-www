@@ -1,0 +1,19 @@
+text: > #
+    We use science and technology to tackle the world's most complex problems.
+    This site features some of our best technologies and the projects
+    we're committed to.<br /><br />
+
+    Work with our tools. Star them. Fork them.
+
+slides:
+    - file: stats-1.png
+      title: Stats 1
+
+    - file: stats-3.png
+      title: Stats 3
+
+    - file: stats-4.png
+      title: Stats 4
+
+    - file: stats-5.png
+      title: Stats 5

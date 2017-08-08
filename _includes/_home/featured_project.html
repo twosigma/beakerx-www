@@ -1,0 +1,47 @@
+<section class="pageSection featured">
+    <header class="pageSection__header">
+        <h2 class="pageSection__title">{{ site.data.featured_project.header }}</h2>
+    </header>
+    <div class="pageSection__content">
+        <div class="featuredProject">
+            <div class="featuredProject_header featuredProject_row">
+              <div class="featuredProject_item">
+                <div class="featuredProject_row featuredProject_row--unbreak">
+                  <div class="featuredProject_header">
+                    <h3 class="featuredProject__title">{{ site.data.featured_project.title }}</h3>
+                    <div class="projectMeta">
+                        {% for repository in site.github.public_repositories %}
+                            {% if site.data.featured_project.github.project == repository.name %}
+                                <span class="projectMeta__item">
+                                  {% include _icons/star.svg %}
+                                  {{ repository.stargazers_count }}
+                                </span>
+                                <span class="projectMeta__item">
+                                  {% include _icons/fork.svg %}
+                                  {{ repository.forks_count }}
+                                </span>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                  </div>
+                  {% include _icons/{{ site.data.featured_project.icon }} %}
+                </div>
+              </div>
+              <div class="featuredProject_item">
+                <img src="static/img/{{ site.data.featured_project.image.file }}"
+                alt="{{ site.data.featured_project.image.text }}">
+                <div class="featuredProject__cta">
+                  <a class="cta-button"
+                    href="{{ site.data.featured_project.cta.link }}"
+                    target="_blank"
+                    data-js-component="safariFix">See How</a>
+                </div>
+              </div>
+            </div>
+            <p>
+              {{ site.data.featured_project.text }}
+              <a class="featuredProject__link" href="https://github.com/{{site.data.featured_project.github.user}}/{{site.data.featured_project.github.project}}">View Project</a>
+            </p>
+        </div>
+    </div>
+</section>

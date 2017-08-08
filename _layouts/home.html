@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="static/img/favicon.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+    </style>
+    <link rel="stylesheet" href="/static/css/site.css">
+</head>
+<body>
+  <main class="home">
+      {% include header.html %}
+      {{ content }}
+      {% include footer.html %}
+  </main>
+  <script src="/static/js/jquery-3.2.0.min.js"></script>
+  <script src="/static/js/slick.min.js"></script>
+  <script src="/static/js/scripts.js"></script>
+</body>
+</html>

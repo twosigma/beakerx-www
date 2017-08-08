@@ -1,0 +1,86 @@
+---
+header: Contributions we're<br/> making to the community
+projects:
+  - title: pandas
+    text: > #
+          The creator of pandas and another core team member
+          work in-house.
+    link: http://pandas.pydata.org
+    github:
+        user: pandas-dev
+        project: pandas
+
+  - title: Apache Mesos
+    text: > #
+          Our tech stack is built on Apache Mesos, and we are 
+          heavily involved in this community. Catch us at 
+          MesosCon each year.
+    link: http://mesos.apache.org
+    github:
+        user: apache
+        project: mesos
+
+  - title: Apache Spark
+    text: > #
+          We depend on Apache Spark to scale our data-heavy analyses
+          and we build tools on top of it (see our Flint project
+          above). The Spark Summits each year are a calendar
+          highlight.
+    link: http://spark.apache.org
+    github:
+        user: apache
+        project: spark
+
+  - title: Apache Arrow
+    text: > #
+          We have been helping drive the Arrow format design
+          and the Python and C++ implementations.
+    link: https://arrow.apache.org
+    github:
+        user: apache
+        project: arrow
+
+  - title: Apache Parquet
+    text: > #
+          We have been contributing the C++ implementation
+          parquet-cpp.
+    link: https://parquet.apache.org
+    github:
+        user: apache
+        project: parquet
+
+  - title: Jupyter
+    text: > #
+          TS has made major contributions to the notebook
+          space with Beaker. Now, we're collaborating with
+          the Jupyter team to bring some of Beaker's
+          innovations to Jupyter.
+    link: http://jupyter.org
+    github:
+        user: jupyter
+        project: jupyter_core
+
+  - title: NumFOCUS
+    text: > #
+          We are a Corporate Partner of NumFOCUS, a non-profit
+          dedicated to supporting the open source scientific
+          computing community.  
+    link: http://www.numfocus.org
+    github:
+        user: numfocus
+  - title: Bazel
+    text: > #
+          Our engineers have contributed experimental support
+          for distributed caching and execution. This is an
+          ongoing area of development in partnership with the
+          Google team.
+    link: https://bazel.build
+    github:
+      user: bazelbuild
+      project: bazel
+  - title: ScratchJr
+    text: > #
+          ScratchJr enables children ages 5-7 to program
+          their own interactive stories and games.
+          Our team developed ScratchJr for Android devices.
+    link: https://www.scratchjr.org

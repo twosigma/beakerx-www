@@ -1,0 +1,46 @@
+.stats {
+  @include breakpoint(tablet-landscape) {
+    @include size('padding-top', 60px);
+    @include size('padding-bottom', 60px);
+  }
+}
+
+.stats__wrapper {
+  @include breakpoint(tablet-landscape) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.stats__item {
+  @include breakpoint(tablet-landscape) {
+   width: calc(50% - #{ rem(20px) });
+  }
+}
+
+.stats__item--main {
+  @include bar('bottom');
+  @include size('padding-bottom', 20px);
+
+  @include breakpoint(tablet-landscape) {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.stats__item--aside {
+  @include breakpoint(tablet-landscape) {
+    @include bar('left');
+    @include size('padding-left', 40px);
+  }
+}
+
+.stats__text p {
+  color: inherit;
+  @include size('font-size', 18px);
+
+  @include breakpoint(tablet-landscape) {
+    margin-top: 0;
+    transform: translateY(#{ rem(-5px) });
+  }
+}

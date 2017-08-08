@@ -1,0 +1,112 @@
+.overview {
+  padding: 40px 0;
+
+  @include breakpoint(desktop) {
+    padding: 100px 0;
+  }
+
+  .pageSection {
+    @include breakpoint(desktop) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  p {
+    @extend %p;
+
+    @include breakpoint(desktop) {
+      width: 50%;
+      padding: 0;
+      margin-top: 0;
+    }
+
+    a {
+      color: $color-white;
+      @include underlined($color-white);
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    width: 100%;
+    @include size('font-size', 18px);
+    @include size('margin-bottom', 60px);
+    @include size('line-height', 24px);
+    font-weight: $font-extra-bold;
+
+    @include breakpoint(desktop) {
+      @include size('margin-bottom', 80px);
+    }
+
+    + p {
+      @include bar('bottom', 30px);
+      @include size('padding-bottom', 30px);
+      @include size('margin-bottom', 30px);
+
+      @include breakpoint(desktop) {
+        border-bottom: 0;
+        @include bar('right');
+        @include size('padding-right', 40px);
+      }
+    }
+
+    + p + p {
+      @include breakpoint(desktop) {
+        @include size('padding-left', 40px);
+      }
+    }
+
+    &.full-width {
+      + p,
+      + p + p {
+        width: 100%;
+        border: 0;
+
+        @include breakpoint(desktop) {
+          padding: 0;
+        }
+      }
+    }
+
+    &.no-bars {
+      + p,
+      + p + p {
+        border: 0;
+      }
+    }
+
+    &.single-block {
+
+      @include breakpoint(desktop) {
+        width: 30%;
+      }
+
+      + p {
+        border: 0;
+
+        @include breakpoint(desktop) {
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  hr {
+    @include sectionBorder;
+    width: 100%;
+    @include size('margin-top', 40px);
+    @include size('margin-bottom', 40px);
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+
+    @include breakpoint(desktop) {
+      @include size('margin-top', 60px);
+      @include size('margin-bottom', 60px);
+    }
+  }
+
+  .iframe-wrap {
+    @include aspectRatio(16, 9, 'iframe');
+  }
+}

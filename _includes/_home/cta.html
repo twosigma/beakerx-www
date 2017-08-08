@@ -1,0 +1,9 @@
+<div class="pageSection cta">
+    {% for cta in site.data.cta %}
+        <div class="cta__item">
+            <h3 class="cta__title">{{cta.title}}</h3>
+            <p class="cta__text">{{cta.text}}</p>
+            <a href="{{cta.link.url}}" class="cta__link" target="_blank">{{cta.link.title}}</a>
+        </div>
+    {% endfor %}
+</div>

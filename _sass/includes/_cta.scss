@@ -1,0 +1,63 @@
+.cta {
+  padding: 0 rem(30px);
+
+  @include breakpoint(tablet-landscape) {
+    @include size('padding-left', 130px);
+    @include size('padding-right', 130px);
+    @include size('padding-bottom', 30px);
+    @include size('margin-bottom', 30px);
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.cta__item {
+  background-color: $color-orange-dark;
+  @include size('padding', 20px);
+  @include size('margin-bottom', 20px);
+
+  @include breakpoint(tablet-landscape) {
+    width: calc(50% - #{ rem(10px) });
+    @include size('padding', 30px);
+    @include size('padding-top', 20px);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.cta__title {
+  @include size('font-size', 22px);
+  margin: 0;
+  font-weight: $font-bold;
+  @include breakpoint(tablet-landscape) {
+    @include size('font-size', 38px);
+  }
+}
+
+.cta__text {
+  color: inherit;
+  margin: rem(5px) 0;
+}
+
+.cta__link {
+  font-weight: $font-extra-bold;
+  text-transform: uppercase;
+  @include size('font-size', 12px);
+  @include size('letter-spacing', 1px);
+
+  &:after {
+    content: $arrow-right;
+    @include size('vertical-align', -9px);
+  }
+}
+
+.page .cta-button {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  border-color: $color-orange;
+  font-weight: $font-bold;
+  margin: rem(20px) 0;
+}
