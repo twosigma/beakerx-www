@@ -1,6 +1,6 @@
 ---
 title: FAQs
-layout: page
+layout: home
 project: beakerX
 order: 2
 ---

@@ -1,6 +1,6 @@
 ---
 title: Overview
-layout: page
+layout: home
 project: beakerX
 order: 1
 ---

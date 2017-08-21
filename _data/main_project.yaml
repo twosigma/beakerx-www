@@ -1,0 +1,29 @@
+title: beakerX
+text: > #
+      Beaker is a notebook-style development environment
+      for working interactively with large and complex datasets.
+      Its plugin-based architecture allows you to
+      switch between languages.
+github:
+    user: twosigma
+    project: beakerx
+icon: Beaker.svg
+logo: beakerx-logo.svg
+twitter: twosigma
+header:
+  - section:
+    title: Install beakerX
+    icon: terminal.svg
+    content: > #
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor [incididunt ut labore](https://www.twosigma.com)
+      magna aliqua.
+      `conda install -c conda-forge beakerx Jupiter notebook`
+
+  - section:
+    title: Build with Docker
+    icon: docker-logo.svg
+    content: > #
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor [incididunt ut labore](https://www.twosigma.com)
+      magna aliqua.
