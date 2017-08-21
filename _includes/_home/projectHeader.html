@@ -1,15 +1,15 @@
 <div class="projectHeader">
   <div class="projectHeader__section js--preNav">
     <header class="projectHeader__lead projectHeader__section__inner">
-      {% if project.logo %}
+      {% if include.project.logo %}
       <span class="projectHeader__logo">
-        {% include _icons/{{ project.logo }} %}
+        {% include _icons/{{ include.project.logo }} %}
       </span>
       {% else %}
       <span class="projectHeader__graphic">
-        {% include _icons/{{ project.icon }} %}
+        {% include _icons/{{ include.project.icon }} %}
       </span>
-      <h2 class="projectHeader__title"><a href="/{{ page.project | slugify }}">{{ project.title }}</a></h2>
+      <h2 class="projectHeader__title"><a href="/{{ page.project | slugify }}">{{ include.project.title }}</a></h2>
       {% endif %}
       <span class="projectHeader__toggle js--dropdown__open">
         {% include _icons/menu.svg %}
@@ -21,7 +21,7 @@
     <div class="pageHeader__content projectHeader__section__inner">
       <div class="projectMeta">
         {% for repository in site.github.public_repositories %}
-          {% if project.github.project == repository.name %}
+          {% if include.project.github.project == repository.name %}
           <span class="projectMeta__item github">
             {% include _icons/github.svg %}
           </span>
@@ -35,16 +35,16 @@
           </span>
           {% endif %}
         {% endfor %}
-        {% if project.twitter %}
+        {% if include.project.twitter %}
         <span class="projectMeta__item twitter">
-          <a href="https://twitter.com/{{ project.twitter }}">{% include _icons/twitter.svg %}</a>
+          <a href="https://twitter.com/{{ include.project.twitter }}">{% include _icons/twitter.svg %}</a>
         </span>
         {% endif %}
       </div>
-      <p class="projectHeader--optional projectHeader__text">{{ project.text }}</p>
+      <p class="projectHeader--optional projectHeader__text">{{ include.project.text }}</p>
     </div>
   </div>
-  {% if project.header %}
+  {% if include.project.header %}
     {% if page.order == 1 %}
     <div class="projectHeader__section projectHeader--aside js--postNav">
     {% else %}
@@ -54,7 +54,7 @@
   <div class="projectHeader__section projectHeader--optional projectHeader--aside projectHeader--col">
   {% endif %}
 
-    {% for section in project.header %}
+    {% for section in include.project.header %}
     <div class="projectHeader__item projectHeader__section__inner">
       <header>
         {% if section.icon %}

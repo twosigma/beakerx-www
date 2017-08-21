@@ -2,20 +2,3 @@
 title: Home
 layout: home
 ---
-
-<header class="pageHeader" data-js-component="pageHeader">
-    {% for project in site.data.main_project.projects %}
-    {% include _pages/projectHeader.html project=project %}
-    {% endfor %}
-    {% include _pages/mainNav.html %}
-</header>
-
-{% if page.order == 1 %}
-    <div class="contentWrapper overview" data-js-component="postProcess">
-{% else %}
-    <div class="contentWrapper subpage">
-{% endif %}
-    <section class="pageSection">
-        {{ content }}
-    </section>
-</div>

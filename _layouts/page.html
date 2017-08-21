@@ -16,10 +16,10 @@
       <header class="pageHeader" data-js-component="pageHeader">
         {% for project in site.data.projects.projects %}
           {% if project.title == page.project %}
-            {% include _pages/projectHeader.html project=project %}
+            {% include _home/projectHeader.html project=project %}
           {% endif %}
         {% endfor %}
-        {% include _pages/mainNav.html %}
+        {% include _home/mainNav.html %}
       </header>
       {% if page.order == 1 %}
       <div class="contentWrapper overview" data-js-component="postProcess">

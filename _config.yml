@@ -24,9 +24,6 @@ repository: twosigma/twosigma.github.com
 
 # Subpages
 collections:
-  projects:
-    output: true
-    permalink: /:path.html
   home_subpages:
     output: true
     permalink: /:name
