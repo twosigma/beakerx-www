@@ -3,14 +3,19 @@ title: Home
 layout: home
 ---
 
-<div class="contentWrapper contentWrapper--hero">
-    {% include _home/hero.html %}
-</div>
-<div class="contentWrapper">
-    {% include _home/stats.html %}
-    {% include _home/featured_project.html %}
-    {% include _home/projects.html %}
-    {% include _home/contributions.html %}
-    {% include _home/what_we_do.html %}
-    {% include _home/cta.html %}
+<header class="pageHeader" data-js-component="pageHeader">
+    {% for project in site.data.main_project.projects %}
+    {% include _pages/projectHeader.html project=project %}
+    {% endfor %}
+    {% include _pages/mainNav.html %}
+</header>
+
+{% if page.order == 1 %}
+    <div class="contentWrapper overview" data-js-component="postProcess">
+{% else %}
+    <div class="contentWrapper subpage">
+{% endif %}
+    <section class="pageSection">
+        {{ content }}
+    </section>
 </div>
