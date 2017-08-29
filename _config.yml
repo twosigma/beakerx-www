@@ -29,7 +29,7 @@ collections:
     permalink: /:name
         
 sass:
-    sass_dir: _sass
+  sass_dir: _sass
 
 # Build settings
 markdown: kramdown
