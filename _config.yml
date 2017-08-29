@@ -33,7 +33,7 @@ sass:
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
   - jekyll-github-metadata
   - jekyll-press
