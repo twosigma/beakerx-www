@@ -27,6 +27,9 @@ collections:
   home_subpages:
     output: true
     permalink: /:name
+        
+sass:
+    sass_dir: _sass
 
 # Build settings
 markdown: kramdown
