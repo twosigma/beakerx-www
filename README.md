@@ -1,6 +1,6 @@
-# two-sigma-open-source
+# BeakerX Web Page
 
-## Instalation
+## Installation
 
 This site is rendered by [Jekyll](https://jekyllrb.com), so you will need some dependencies to run it.
 
