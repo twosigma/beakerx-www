@@ -16,9 +16,8 @@
 title: BeakerX
 email: beakerx-feedback@twosigma.com
 description: "BeakerX: Beaker Extensions for Jupyter"
-baseurl: "/beakerx-www" # the subpath of your site, e.g. /blog
-url: "http://opensource.twosigma.com/beakerx-www" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: beakernotebook
+url: "http://beakerx.com"
+twitter_username: BeakerXNotebook
 github_username:  twosigma
 repository: twosigma/twosigma.github.com
 
