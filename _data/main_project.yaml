@@ -1,29 +1,28 @@
-title: beakerX
+title: BeakerX
 text: > #
-      Beaker is a notebook-style development environment
-      for working interactively with large and complex datasets.
-      Its plugin-based architecture allows you to
-      switch between languages.
+      BeakerX is a collection of kernels and extensions to the Jupyter
+      interactive computing environment. It provides JVM support,
+      interactive plots, tables, forms, publishing, and more.
 github:
     user: twosigma
     project: beakerx
 icon: Beaker.svg
 logo: beakerx-logo.svg
-twitter: twosigma
+twitter: BeakerXNotebook
 header:
   - section:
-    title: Install beakerX
+    title: Install BeakerX
     icon: terminal.svg
     content: > #
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor [incididunt ut labore](https://www.twosigma.com)
-      magna aliqua.
-      `conda install -c conda-forge beakerx Jupiter notebook`
+      You can install with conda or pip.  Be sure to install the
+      [dependencies](https://github.com/twosigma/beakerx#dependencies) first.
+      `conda install -c conda-forge beakerx`
 
   - section:
-    title: Build with Docker
+    title: Run with Docker
     icon: docker-logo.svg
     content: > #
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor [incididunt ut labore](https://www.twosigma.com)
-      magna aliqua.
+      Docker is a great way to run and manage servers including
+      Jupyter with BeakerX built-in.  BeakerX has a container
+      distributed by Docker Hub so you can download and run it with
+      just one command: `docker run -p 8888:8888 beakerx/beakerx`
