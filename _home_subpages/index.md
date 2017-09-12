@@ -18,11 +18,14 @@ exporting.
 
 ***
 
-## Block with image on right<br>(and bottom)
+## Interactive Tables
 
-Lorem ipsum dolor sit amet, vel in mundi diceret intellegebat, probo latine diceret et mel. An quo minim ponderum posidonium. Recusabo hendrerit vis cu, vim cu delenit inermis voluptaria.
+Our table widget automatically recognizes pandas dataframes and allows
+you to search, sort, drag, filter, format, select, graph, hide, pin,
+and export to CSV and or clipboard.  This makes connecting to
+spreadsheets quick and easy.
 
-![image title](/static/img/stats-3.png)
+![image title](/static/img/table.png)
 
 ***
 ## Youtube video

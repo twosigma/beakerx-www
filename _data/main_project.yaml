@@ -4,7 +4,7 @@ text: > #
       interactive computing environment. It provides JVM support,
       interactive plots, tables, forms, publishing, and more.  BeakerX supports:
       </p>
-      <ul><li>Groovy, Scala, Clojure, Kotlin, and SQL,
+      <ul><li>Groovy, Scala, Clojure, Kotlin, Java, and SQL,
       including many magics and interactive widgets.
       </li>
       <li>Widgets for time-series plotting, tables, forms, and
