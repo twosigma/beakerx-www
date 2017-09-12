@@ -22,7 +22,7 @@ exporting.
 
 Our table widget automatically recognizes pandas dataframes and allows
 you to search, sort, drag, filter, format, select, graph, hide, pin,
-and export to CSV and or clipboard.  This makes connecting to
+and export to CSV or clipboard.  This makes connecting to
 spreadsheets quick and easy.
 
 ![image title](/static/img/table.png)
