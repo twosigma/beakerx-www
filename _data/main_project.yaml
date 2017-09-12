@@ -1,21 +1,24 @@
 title: BeakerX
 text: > #
-      BeakerX is a collection of kernels and extensions to the Jupyter
+      <p>BeakerX is a collection of kernels and extensions to the Jupyter
       interactive computing environment. It provides JVM support,
-      interactive plots, tables, forms, publishing, and more.
-
-      * BeakerX supports Groovy, Scala, Clojure, Kotlin, and SQL,
+      interactive plots, tables, forms, publishing, and more.  BeakerX supports:
+      </p>
+      <ul><li>Groovy, Scala, Clojure, Kotlin, and SQL,
       including many magics and interactive widgets.
-
-      * BeakerX has widgets for time-series plotting, tables, forms, and
+      </li>
+      <li>Widgets for time-series plotting, tables, forms, and
       more.  There are Python and JavaScript APIs in addition to the
       JVM languages.
-
-      * It supports one-click publication with interactive plots and
+      </li>
+      <li>One-click publication with interactive plots and
       tables, and a data catalog with drag-and-drop.
-
+      </li>
+      </ul>
+      <p>
       BeakerX is available as an alpha release with conda and docker.
       Or build from the open source code on github.
+      </p>
 
 github:
     user: twosigma
