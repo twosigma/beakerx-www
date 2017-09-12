@@ -5,11 +5,16 @@ project: beakerX
 order: 1
 ---
 
-## Block with<br>image on left
+## Interactive Plotting
 
-![image title](/static/img/stats-4.png)
+![image title](/static/img/time-series.png)
 
-Lorem ipsum dolor sit amet, vel in [Inline link](https://www.twosigma.com), probo latine diceret et mel. An quo minim ponderum posidonium. **bold** vis cu, *italic* vim cu delenit inermis voluptaria.
+All of BeakerX's JVM languages plus Python and JavaScript have APIs
+for interactive time-series, scatter plots, histograms, heatmaps, and
+treemaps.  The widgets remain interactive in both notebooks saved to
+disk, and notebooks published to the web.  They include unique
+features for handling many points, nanosecond resolution, zooming, and
+exporting.
 
 ***
 
