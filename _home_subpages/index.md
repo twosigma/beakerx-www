@@ -28,33 +28,10 @@ spreadsheets quick and easy.
 ![image title](/static/img/table.png)
 
 ***
-## Youtube video
+## Publication
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FYslrc1-NGE" frameborder="0" allowfullscreen></iframe>
+![image title](/static/img/publication.png)
 
-Lorem ipsum dolor sit amet, vel in mundi diceret intellegebat, probo latine diceret et mel. An quo minim ponderum posidonium. Recusabo hendrerit vis cu, vim cu delenit inermis voluptaria.
-
-***
-
-## Full width blocks
-{:.full-width}
-
-![image title](/static/img/stats-3.png)
-
-Lorem ipsum dolor sit amet, vel in mundi diceret intellegebat, probo latine diceret et mel. An quo minim ponderum posidonium. Recusabo hendrerit vis cu, vim cu delenit inermis voluptaria.
-
-***
-
-## Blocks with<br>no bar separators
-{:.no-bars}
-
-Lorem ipsum dolor sit amet, vel in mundi diceret intellegebat, probo latine diceret et mel. An quo minim ponderum posidonium. Recusabo hendrerit vis cu, vim cu delenit inermis voluptaria.
-
-![image title](/static/img/stats-3.png)
-
-***
-
-## Single block<br>and title
-{:.single-block}
-
-Lorem ipsum dolor sit amet, vel in mundi diceret intellegebat, probo latine diceret et mel. An quo minim ponderum posidonium. Recusabo hendrerit vis cu, vim cu delenit inermis voluptaria.
+With a single click, convert the current notebook's contents including
+any interactive widgets to a Github gist. A new tab opens nbviewer on
+it, including the active widgets.  This is a link you can send anyone.
