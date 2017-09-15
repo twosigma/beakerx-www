@@ -17,8 +17,7 @@ legal: > #
 links:
     - title: Twitter
       icon: twitter.svg
-      url: https://twitter.com/twosigma
-
-    - title: Linkedin
-      icon: linkedin.svg
-      url: https://www.linkedin.com/company/two-sigma-investments
+      url: https://twitter.com/BeakerXNotebook
+    - title: Github
+      icon: github.svg
+      url: https://github.com/twosigma/beakerx
