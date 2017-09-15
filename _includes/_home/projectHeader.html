@@ -1,29 +1,14 @@
 <div class="projectHeader">
   <div class="projectHeader__section js--preNav">
-    <header class="projectHeader__lead projectHeader__section__inner">
-      {% if include.project.logo %}
-      <span class="projectHeader__logo">
-        {% include _icons/{{ include.project.logo }} %}
-      </span>
-      {% else %}
-      <span class="projectHeader__graphic">
-        {% include _icons/{{ include.project.icon }} %}
-      </span>
-      <h2 class="projectHeader__title"><a href="/{{ page.project | slugify }}">{{ include.project.title }}</a></h2>
-      {% endif %}
-      <span class="projectHeader__toggle js--dropdown__open">
-        {% include _icons/menu.svg %}
-      </span>
-      <span class="projectHeader__toggle js--dropdown__close">
-        {% include _icons/close.svg %}
-      </span>
-    </header>
     <div class="pageHeader__content projectHeader__section__inner">
       <div class="projectMeta">
         {% for repository in site.github.public_repositories %}
           {% if include.project.github.project == repository.name %}
           <span class="projectMeta__item github">
+	    <a href="https://github.com/twosigma/beakerx"
+	       target="_blank">
             {% include _icons/github.svg %}
+	    </a>
           </span>
           <span class="projectMeta__item star">
             {% include _icons/star.svg %}
