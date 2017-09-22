@@ -52,8 +52,6 @@
 }
 
 .subpage {
-  color: $color-charcoal;
-  background: $color-white;
   padding: 40px 0;
 
   @include breakpoint(desktop) {
@@ -114,9 +112,13 @@
     @include list(ol);
   }
 
+  a {
+    text-decoration: underline;
+  }
+  
   pre,
   code {
-    background-color: $color-xlight-gray;
+    background-color: $color-orange-dark;
     border-color: $color-gray;
   }
 

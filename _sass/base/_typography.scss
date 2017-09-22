@@ -53,10 +53,10 @@ h1 {
 pre,
 code {
   background-color: $color-orange-dark;
-  border: 1px solid $color-white;
+  border: 1px solid $color-gray;
   border-radius: 5px;
   font-family: $font-secondary;
-  @include size('font-size', 14px);
+  font-size: 18px;
 }
 
 code {

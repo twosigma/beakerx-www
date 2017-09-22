@@ -1,30 +1,36 @@
 ---
 title: FAQs
 layout: home
-project: beakerX
+project: BeakerX
 order: 2
 ---
 
-# FAQs
+### How is BeakerX related to Beaker Notebook?
 
-## General
+BeakerX is the successor to Beaker Notebook.  After seeing the demo of
+[Jupyter Lab at SciPy
+2016](https://www.youtube.com/watch?v=Ejh0ftSjk6g) we realized that
+Jupyter had become extensible enough that much of what made Beaker
+special could be done in the Jupyter ecosystem.
 
-##### Question 1 Lorem ipsum dolor sit amet, vel in mundi diceret intellegebat, probo latine diceret et mel. An quo minim ponderum posidonium.
+The result of joining forces with Jupyter is a more powerful tool for
+our users, and a larger community of developers and users that
+continues to grow.  Jupyter users benefit by getting access to our
+work as well.  And we benefit by leveraging shared infrastructure so
+we can focus on adding value.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. [Inline link](https://www.twosigma.com) Ut enim ad minim veniam, quis nostrud exercitation *italics* ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore **bold** eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+It has taken about a year to port Beaker's key features to become
+extensions to Jupyter, and we are very exited to finish this
+transition and release the results with a new name "BeakerX" that
+represents both our history and how large a change this is.
 
-Lorem ipsum dolor sit amet, vel in mundi diceret intellegebat, probo latine diceret et mel. An quo minim ponderum posidonium. Recusabo hendrerit vis cu, vim cu delenit inermis voluptaria.
+### Can I install BeakerX with pip instead of conda?
 
-##### Question 2 Lorem ipsum dolor sit amet, vel in mundi diceret intellegebat, probo latine diceret et mel. An quo minim ponderum posidonium.
+Yes, see the [instructions](/documentation#pip).  Our documentation
+focuses on conda for simplicity.
 
-Lorem ipsum dolor sit amet, vel in mundi diceret intellegebat, probo latine diceret et mel. An quo minim ponderum posidonium. Recusabo hendrerit vis cu, vim cu delenit inermis voluptaria.
+### Can I be informed of new releases?
 
-![placeholder image](http://via.placeholder.com/350x150)
-
-Vis eu urbanitas liberavisse comprehensam, ut utamur delectus gloriatur per, ne liber accommodare sea. Ut cetero nominavi nam, hinc graeci facilisi sit cu, cibo sonet delenit cu pro.
-
-## Installing and Launching
-
-##### Question 1 Lorem ipsum dolor sit amet, vel in mundi diceret intellegebat, probo latine diceret et mel. An quo minim ponderum posidonium.
-
-Lorem ipsum dolor sit amet, vel in mundi diceret intellegebat, probo latine diceret et mel. An quo minim ponderum posidonium. Recusabo hendrerit vis cu, vim cu delenit inermis voluptaria. Vis eu urbanitas liberavisse comprehensam, ut utamur delectus gloriatur per, ne liber accommodare sea. Ut cetero nominavi nam, hinc graeci facilisi sit cu, cibo sonet delenit cu pro.
+Yes, please sign up on our [email
+list](http://beakernotebook.us3.list-manage.com/subscribe?u=d05838b85c905bc618b25e5a9&id=6b3010163c)
+or follow us on [Twitter](https://twitter.com/beakerxnotebook).

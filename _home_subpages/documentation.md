@@ -1,61 +1,39 @@
 ---
 title: Documentation
 layout: home
-project: beakerX
+project: BeakerX
 order: 3
 ---
 
-# Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6
 
-[This is a CTA button](https://www.twosigma.com){:.cta-button}
+### Installation with Conda
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. [Inline link](https://www.twosigma.com) Ut enim ad minim veniam, quis nostrud exercitation *italics* ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore **bold** eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We recommend [conda](https://www.anaconda.com/download/) to install
+Jupyter and BeakerX, and to manage your Python environments.  BeakerX
+works with Python 3.5 and above.
 
-### Undordered list
+```
+conda create -y -n beakerx python=3.5
+source activate beakerx
+conda install -y jupyter openjdk pandas
+conda install -y -c conda-forge ipywidgets
+conda install -y -c conda-forge widgetsnbextension
+conda install -y -c conda-forge beakerx
+```
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
+### Installation with Pip
 
-### Ordered list
+You can also install BeakerX with [pip](https://pypi.python.org/pypi/pip).
 
-1. Item 1
-2. Item 2
-3. Item 3
-4. Item 4
+```
+pip install beakerx
+beakerx-install
+```
 
-### Inline code
-Lorem ipsum dolor `<code> This is an inline code snippet </code>`
+### Running with Docker
 
+Docker is the most reliable way get run Jupyter and BeakerX since it's completely self contained.
 
-### Code block
-
-~~~
-| Follower         | Leader           | Follower         |
-|------------------|------------------|------------------|
-| mesos-master     | mesos-master     | mesos-master     |
-| satellite-master | satellite-master | satellite-master |
-
-      ^               <-  ^  ->                 ^
-      |  -> ->          \ | /           <-  <-  |
-      | / _/             \|/              \,_ \ |
-
-| satellite-slave | satellite-slave | satellite-slave |
-| mesos-slave     | mesos-slave     | mesos-slave     |
-~~~
-
-### Code block with syntax highlighting
-
-~~~
-<link rel="stylesheet" href="/static/css/site.css">
-~~~
-{:.language-html}
-
-### Guist
-<script src="https://gist.github.com/harrypujols/2a6da11afbd9ee1bef92ddd3402a2fc4.js"></script>
+```
+docker run -p 8888:8888 beakerx/beakerx
+```
