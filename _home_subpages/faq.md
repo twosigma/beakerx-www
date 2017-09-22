@@ -34,3 +34,9 @@ focuses on conda for simplicity.
 Yes, please sign up on our [email
 list](http://beakernotebook.us3.list-manage.com/subscribe?u=d05838b85c905bc618b25e5a9&id=6b3010163c)
 or follow us on [Twitter](https://twitter.com/beakerxnotebook).
+
+### Who is responsible for BeakerX?
+
+It is developed by [Two Sigma Open
+Source](http://opensource.twosigma.com/). Yes we are
+[hiring](https://www.twosigma.com/careers).

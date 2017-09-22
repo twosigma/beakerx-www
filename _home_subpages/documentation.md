@@ -5,6 +5,11 @@ project: BeakerX
 order: 3
 ---
 
+### Tutorials and Examples
+
+Most of the documentation consists of
+[notebooks](http://nbviewer.jupyter.org/github/twosigma/beakerx/blob/master/doc/StartHere.ipynb)
+that show BeakerX's kernels and widgets in action.
 
 ### Installation with Conda
 
@@ -37,3 +42,18 @@ Docker is the most reliable way get run Jupyter and BeakerX since it's completel
 ```
 docker run -p 8888:8888 beakerx/beakerx
 ```
+
+### Beaker Notebooks Converter
+
+You can convert classic Beaker Notebook files (with file suffix
+".bkr") to Jupyter Notebooks (with file suffix ".ipynb") as follows:
+
+```
+python -m beakerx.bkr2ipynb *.bkr
+```
+
+### Building and Contributing
+
+We welcome developers to extend and improve BeakerX in ways that can
+benefit everyone.  Please see the
+[README](https://github.com/twosigma/beakerx) for more information.
