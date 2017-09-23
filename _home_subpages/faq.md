@@ -24,6 +24,17 @@ extensions to Jupyter, and we are very exited to finish this
 transition and release the results with a new name "BeakerX" that
 represents both our history and how large a change this is.
 
+### What about classic Beaker's polyglot and autotranslation features?
+
+Beaker Notebook (before BeakerX) is known for supporting polyglot
+programming, and for autotranslating data between languages.  This
+feature has been the most difficult to fit into Jupyter, and it's
+going to take longer to get working.
+
+BeakerX has a prototype implementation that works between Python and
+JavaScript, and the JVM languages and JavaScript.  A more complete
+implementation is on the agenda.
+
 ### Can I install BeakerX with pip instead of conda?
 
 Yes, see the [instructions](/documentation#pip).  Our documentation
