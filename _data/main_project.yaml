@@ -1,6 +1,7 @@
 title: BeakerX
 text: > #
-      <p>BeakerX is a collection of kernels and extensions to the Jupyter
+      <p>BeakerX is a collection of kernels and extensions to the
+      <a target="_blank" href="http://jupyter.org/">Jupyter</a>
       interactive computing environment. It provides JVM support,
       interactive plots, tables, forms, publishing, and more.  BeakerX supports:
       </p>
@@ -40,6 +41,7 @@ header:
     icon: docker-logo.svg
     content: > #
       Docker is a great way to run and manage servers including
-      Jupyter with BeakerX built-in.  BeakerX has a container
+      Jupyter with BeakerX built-in.  BeakerX has a
+      [container](https://hub.docker.com/r/beakerx/beakerx/)
       distributed by Docker Hub so you can download and run it with
       just one command: `docker run -p 8888:8888 beakerx/beakerx`

@@ -15,7 +15,8 @@ that show BeakerX's kernels and widgets in action.
 
 We recommend [conda](https://www.anaconda.com/download/) to install
 Jupyter and BeakerX, and to manage your Python environments.  BeakerX
-works with Python 3.5 and above.
+works with Python 3.5 and above.  Conda forge hosts the [lastest
+version](https://anaconda.org/conda-forge/beakerx).
 
 ```
 conda create -y -n beakerx python=3.5
