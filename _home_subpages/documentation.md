@@ -21,9 +21,7 @@ version](https://anaconda.org/conda-forge/beakerx).
 ```
 conda create -y -n beakerx python=3.5
 source activate beakerx
-conda install -y jupyter openjdk pandas
 conda install -y -c conda-forge ipywidgets
-conda install -y -c conda-forge widgetsnbextension
 conda install -y -c conda-forge beakerx
 ```
 

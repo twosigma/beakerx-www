@@ -32,9 +32,9 @@ header:
     title: Install BeakerX
     icon: terminal.svg
     content: > #
-      You can install with conda or pip.  Be sure to install the
-      [dependencies](https://github.com/twosigma/beakerx#dependencies) first.
-      `conda install -c conda-forge beakerx`
+      You can install with conda with just:
+      `conda install -c conda-forge ipywidgets beakerx`
+      See the [documentation](/documentation) for more details.
 
   - section:
     title: Run with Docker
