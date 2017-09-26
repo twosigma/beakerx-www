@@ -25,6 +25,14 @@ conda install -y -c conda-forge ipywidgets
 conda install -y -c conda-forge beakerx
 ```
 
+### Running BeakerX
+
+Start Jupyter with
+```
+jupyter notebook
+```
+and then use the "New" menu to create a notebook in the language of your choice.
+
 ### Installation with Pip
 
 You can also install BeakerX with [pip](https://pypi.python.org/pypi/pip).
