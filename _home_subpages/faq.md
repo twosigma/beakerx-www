@@ -7,11 +7,11 @@ order: 2
 
 ### How is BeakerX related to Beaker Notebook?
 
-BeakerX is the successor to Beaker Notebook.  After seeing the demo of
-[Jupyter Lab at SciPy
-2016](https://www.youtube.com/watch?v=Ejh0ftSjk6g) we realized that
-Jupyter had become extensible enough that much of what made Beaker
-special could be done in the Jupyter ecosystem.
+BeakerX is the successor to [Beaker Notebook](http://beakernotebook.com/).
+After seeing the demo of
+[Jupyter Lab at SciPy 2016](https://www.youtube.com/watch?v=Ejh0ftSjk6g)
+we realized that Jupyter had become extensible enough that much of
+what made Beaker special could be done in the Jupyter ecosystem.
 
 The result of joining forces with Jupyter is a more powerful tool for
 our users, and a larger community of developers and users that
