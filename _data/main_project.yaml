@@ -16,10 +16,10 @@ text: > #
       tables, and a data catalog with drag-and-drop.
       </li>
       </ul>
-      <p>
-      BeakerX is available as an alpha release with conda and docker.
-      Or build from the open source code on github.
-      </p>
+      <p> BeakerX is available as an beta release via conda, pip, and
+      docker.  Or build from the latest open source code on <a
+      target="_blank"
+      href="https://github.com/twosigma/beakerx">github</a>.</p>
 
 github:
     user: twosigma
