@@ -34,7 +34,7 @@ header:
     content: > #
       You can install with conda with just:
       `conda install -c conda-forge ipywidgets beakerx`
-      See the [documentation](/documentation) for more details,
+      See the [documentation](/documentation#tutorials-and-examples) for more details,
       including using pip.
 
   - section:
