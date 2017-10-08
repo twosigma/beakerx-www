@@ -13,7 +13,7 @@ text: > #
       JVM languages.
       </li>
       <li>One-click publication with interactive plots and
-      tables, and a data catalog with drag-and-drop.
+      tables.
       </li>
       </ul>
       <p>A beta release of BeakerX is available via conda, pip, and
@@ -34,7 +34,8 @@ header:
     content: > #
       You can install with conda with just:
       `conda install -c conda-forge ipywidgets beakerx`
-      See the [documentation](/documentation) for more details.
+      See the [documentation](/documentation) for more details,
+      including using pip.
 
   - section:
     title: Run with Docker
