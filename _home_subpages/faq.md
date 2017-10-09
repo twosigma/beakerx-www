@@ -20,7 +20,7 @@ work as well.  And we benefit by leveraging shared infrastructure so
 we can focus on adding value.
 
 It has taken about a year to port Beaker's key features to become
-extensions to Jupyter, and we are very exited to finish this
+extensions to Jupyter, and we are very excited to finish this
 transition and release the results with a new name "BeakerX" that
 represents both our history and how large a change this is.
 
