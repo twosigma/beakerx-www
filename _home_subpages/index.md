@@ -10,22 +10,25 @@ order: 1
 ![image title](/static/img/time-series.png)
 
 All of BeakerX's JVM languages plus Python and JavaScript have APIs
-for interactive time-series, scatter plots, histograms, heatmaps, and
-treemaps.  The widgets remain interactive in both notebooks saved to
-disk, and notebooks published to the web.  They include unique
-features for handling many points, nanosecond resolution, zooming, and
-exporting.
+for [interactive
+time-series](https://nbviewer.jupyter.org/gist/anonymous/7450f2ef784f72f5811ee54ed3d97fdb),
+scatter plots, histograms, heatmaps, and treemaps.  The widgets remain
+interactive in both notebooks saved to disk, and notebooks published
+to the web.  They include unique features for handling many points,
+nanosecond resolution, zooming, and exporting.
 
 ***
 
 ## Interactive Tables
 
-BeakerX's table widget automatically recognizes pandas dataframes and allows
-you to search, sort, drag, filter, format, select, graph, hide, pin,
-and export to CSV or clipboard.  This makes connecting to
-spreadsheets quick and easy.
+BeakerX's [table
+widget](https://nbviewer.jupyter.org/gist/anonymous/d7dbf536abade987157c085b1850416d)
+automatically recognizes pandas dataframes and allows you to search,
+sort, drag, filter, format, select, graph, hide, pin, and export to
+CSV or clipboard.  This makes connecting to spreadsheets quick and
+easy.
 
-![image title](/static/img/table.png)
+![image title](/static/img/table-with-menu.png)
 
 ***
 ## Publication
