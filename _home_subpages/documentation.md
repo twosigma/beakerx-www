@@ -19,7 +19,7 @@ works with Python 3.5 and above.  Conda forge hosts the [lastest
 version](https://anaconda.org/conda-forge/beakerx).
 
 ```
-conda create -y -n beakerx python=3.5
+conda create -y -n beakerx 'python>=3'
 source activate beakerx
 conda install -y -c conda-forge ipywidgets
 conda install -y -c conda-forge beakerx
