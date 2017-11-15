@@ -25,6 +25,14 @@ conda install -y -c conda-forge ipywidgets
 conda install -y -c conda-forge beakerx
 ```
 
+### Upgrading
+
+If you have an environment with a previous version of BeakerX, to
+upgrade to the latest version use:
+```
+conda update -c conda-forge beakerx
+```
+
 ### Running BeakerX
 
 Start Jupyter with
