@@ -144,7 +144,6 @@
     }
 
     &.github {
-      @include size('margin-right', 5px);
 
       svg {
         transform: translateY(-1px);
@@ -164,9 +163,10 @@
       }
     }
 
+    &.star,
+    &.fork,
     &.twitter {
-      @include bar('left', 5px);
-      padding-left: 20px;
+      @include size('padding-left', 5px);
     }
   }
 
