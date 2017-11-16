@@ -19,6 +19,10 @@
 
   &__text {
     @extend %p;
+
+    a {
+      @include underlined($color-white);
+    }
   }
 
   &__lead {
