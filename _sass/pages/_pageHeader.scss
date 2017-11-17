@@ -16,6 +16,14 @@
   svg {
     fill: $color-white;
   }
+
+  &__dropdown {
+    display: none;
+
+    @include breakpoint(desktop) {
+      display: block;
+    }
+  }
 }
 
 .js--dropdown__close {
