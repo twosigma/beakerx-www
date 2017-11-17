@@ -59,6 +59,21 @@ var TSOS = TSOS || {};
     breakpoint : function () {
       var breakpoint = window.getComputedStyle(document.querySelector('body'), ':before').getPropertyValue('content').replace(/\"/g, '');
       return breakpoint;
+    },
+
+    initLatestRelease : function() {
+      var latestEl = $('.latestRelease');
+      var latestUrl = latestEl.data('releases-url').replace('{/id}', '/latest');
+
+      $.ajax(latestUrl).then(function(resp) {
+        latestEl.empty().append(
+          $('<a>', {
+            target: '_blank',
+            href: resp.html_url,
+            text: resp.tag_name,
+          })
+        )
+      });
     }
   };
 
@@ -180,5 +195,6 @@ var TSOS = TSOS || {};
   // -----------------------------
   $(function() {
     APP.helpers.initComponents($('body'));
+    APP.helpers.initLatestRelease();
   });
 }(window, jQuery, TSOS, undefined));
