@@ -64,7 +64,7 @@ You can convert classic Beaker Notebook files (with file suffix
 ".bkr") to Jupyter Notebooks (with file suffix ".ipynb") as follows:
 
 ```
-python -m beakerx.bkr2ipynb *.bkr
+bkr2ipynb *.bkr
 ```
 
 ### Building and Contributing
