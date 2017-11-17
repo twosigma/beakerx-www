@@ -172,6 +172,13 @@
     &.twitter {
       @include size('padding-left', 5px);
     }
+
+    &.latestRelease {
+      @include size('padding-left', 0px);
+      a {
+        @include size('margin-left', 5px);
+      }
+    }
   }
 
   .projectMeta ~ p:last-of-type {

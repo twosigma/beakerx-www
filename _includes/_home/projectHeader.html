@@ -10,6 +10,7 @@
             {% include _icons/github.svg %}
 	    </a>
           </span>
+          <span class="projectMeta__item latestRelease" data-releases-url="{{ repository.releases_url }}"></span>
           <span class="projectMeta__item star">
             {% include _icons/star.svg %}
             {{ repository.stargazers_count }}
