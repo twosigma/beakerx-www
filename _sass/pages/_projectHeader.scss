@@ -20,6 +20,12 @@
   &__text {
     @extend %p;
 
+    padding: rem(10px) rem(30px);
+
+    @include breakpoint(desktop) {
+      padding: 0;
+    }
+
     a {
       @include underlined($color-white);
     }
