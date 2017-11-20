@@ -40,6 +40,10 @@ implementation is on the agenda.
 Yes, see the [instructions](/documentation#pip).  Our documentation
 focuses on conda for simplicity.
 
+### Can I use BeakerX on win32?
+
+We do not support win32 because openjdk doesn't.
+
 ### Can I be informed of new releases?
 
 Yes, please sign up on our [email
