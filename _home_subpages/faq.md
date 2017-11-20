@@ -42,7 +42,7 @@ focuses on conda for simplicity.
 
 ### Can I use BeakerX on win32?
 
-We do not support win32 because openjdk doesn't.
+Win32 is not supported because openjdk doesn't support it.  Win64 is recommended.
 
 ### Can I be informed of new releases?
 
