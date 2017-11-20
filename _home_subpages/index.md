@@ -7,7 +7,7 @@ order: 1
 
 ## Interactive Plotting
 
-[![image title](/static/img/time-series.png)](https://nbviewer.jupyter.org/gist/anonymous/7450f2ef784f72f5811ee54ed3d97fdb){:target="_blank"}
+[![image title](/static/img/time-series.png)](https://nbviewer.jupyter.org/gist/anonymous/7450f2ef784f72f5811ee54ed3d97fdb){:target="_blank" class="img"}
 
 All of BeakerX's JVM languages plus Python and JavaScript have APIs
 for [interactive
@@ -28,7 +28,7 @@ sort, drag, filter, format, select, graph, hide, pin, and export to
 CSV or clipboard.  This makes connecting to spreadsheets quick and
 easy.
 
-[![image title](/static/img/table-with-menu.png)](https://nbviewer.jupyter.org/gist/anonymous/d7dbf536abade987157c085b1850416d){:target="_blank"}
+[![image title](/static/img/table-with-menu.png)](https://nbviewer.jupyter.org/gist/anonymous/d7dbf536abade987157c085b1850416d){:target="_blank" class="img"}
 
 ***
 ## Publication
