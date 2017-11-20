@@ -42,7 +42,9 @@ focuses on conda for simplicity.
 
 ### Can I use BeakerX on win32?
 
-Win32 is not supported because [OpenJDK on Conda Forge](https://anaconda.org/conda-forge/openjdk) doesn't support it.  Win64 is recommended.
+Win32 is not supported because [OpenJDK on Conda Forge](https://anaconda.org/conda-forge/openjdk)
+doesn't support it.  Win64 is recommended.  But if you install a JDK
+on your own, it should work.
 
 ### Can I be informed of new releases?
 
