@@ -27,19 +27,10 @@
         </span>
         {% endif %}
       </div>
-      <div class="projectHeader--optional projectHeader__text">{{ include.project.text | markdownify }}</div>
+      <div class="projectHeader__text">{{ include.project.text | markdownify }}</div>
     </div>
   </div>
-  {% if include.project.header %}
-    {% if page.order == 1 %}
-    <div class="projectHeader__section projectHeader--aside js--postNav">
-    {% else %}
-    <div class="projectHeader__section projectHeader--optional projectHeader--aside">
-    {% endif %}
-  {% else %}
-  <div class="projectHeader__section projectHeader--optional projectHeader--aside projectHeader--col">
-  {% endif %}
-
+  <div class="projectHeader__section projectHeader--aside">
     {% for section in include.project.header %}
     <div class="projectHeader__item projectHeader__section__inner">
       <header>
