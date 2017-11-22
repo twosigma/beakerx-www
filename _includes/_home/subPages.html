@@ -1,0 +1,27 @@
+<div id="subPagesWrapper">
+  {% assign sorted_pages = site.home_subpages | sort:"order" %}
+
+  <nav class="mainNav pageHeader__dropdown">
+    <ul>
+      {% for item in sorted_pages %}
+      {% assign subpage_section_id="js--subpage-" | append:item.slug %}
+      <li {% if item.url == page.url %}class="active"{% endif %}>
+        <a href="{{ item.url | absolute_url }}" data-content-id="{{ subpage_section_id }}"
+           data-wrapper-class="{% if item.slug == 'index' %}overview{% else %}subpage{% endif %}"
+           data-url="{{ item.url | absolute_url }}">{{ item.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <div class="contentWrapper {% if page.slug == 'index' %}overview{% else %}subpage{% endif %}">
+    {% for item in sorted_pages %}
+    {% assign subpage_section_id="js--subpage-" | append:item.slug %}
+    {%- capture section_classes %}pageSection {% if item.url == page.url %}active{% endif %}{% endcapture -%}
+    <section id="{{ subpage_section_id }}" class="{{ section_classes }}">
+      {{ item.content | markdownify }}
+    </section>
+    {% endfor %}
+  </div>
+
+</div>
