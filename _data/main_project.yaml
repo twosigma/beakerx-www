@@ -34,6 +34,6 @@ header:
     content: > #
       Docker is a great way to run and manage servers including
       Jupyter with BeakerX built-in.  BeakerX has a
-      [container](https://hub.docker.com/r/beakerx/beakerx/)
+      [container](https://hub.docker.com/r/beakerx/beakerx/){:target="_blank"}
       distributed by Docker Hub so you can download and run it with
       just one command: `docker run -p 8888:8888 beakerx/beakerx`
