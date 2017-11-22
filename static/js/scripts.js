@@ -71,6 +71,7 @@ var TSOS = TSOS || {};
 
   SubPagesComponent.prototype.onPopStateHandler = function(event) {
     var state = event.originalEvent.state;
+    if (state === null) { return; }
     var content_id = state.content_id;
     var $clickedEl = $('a[data-content-id="' + content_id + '"]');
 
