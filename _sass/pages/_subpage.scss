@@ -123,6 +123,12 @@
   }
 
   .pageSection {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
     @include breakpoint(tablet-landscape) {
       max-width: 675px;
       margin: 0 auto;

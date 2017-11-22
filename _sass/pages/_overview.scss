@@ -6,9 +6,15 @@
   }
 
   .pageSection {
-    @include breakpoint(desktop) {
-      display: flex;
-      flex-wrap: wrap;
+    display: none;
+
+    &.active {
+      display: block;
+
+      @include breakpoint(desktop) {
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
   }
 
