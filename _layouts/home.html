@@ -5,34 +5,24 @@
     <title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% include _home/openGraphMeta.html %}
+    {%- include _home/openGraphMeta.html -%}
     <link rel="shortcut icon" href="static/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-  <main class="home">
-      {% include header.html %}
+  <main class="home fadeIn">
+    {%- include header.html -%}
     <header class="pageHeader" data-js-component="pageHeader">
-      {% include _home/projectHeader.html project=site.data.main_project %}
-      {% include _home/mainNav.html %}
+      {%- include _home/projectHeader.html project=site.data.main_project -%}
     </header>
 
-    {% if page.order == 1 %}
-      <div class="contentWrapper overview" data-js-component="postProcess">
-    {% else %}
-      <div class="contentWrapper subpage">
-    {% endif %}
-        <section class="pageSection">
-          {{ content }}
-        </section>
-      </div>
+    {%- include _home/subPages.html -%}
 
-    {% include footer.html %}
+    {%- include footer.html -%}
   </main>
   <script src="/static/js/jquery-3.2.0.min.js"></script>
-  <script src="/static/js/slick.min.js"></script>
   <script src="/static/js/scripts.js"></script>
 </body>
 </html>

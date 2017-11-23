@@ -37,7 +37,7 @@ implementation is on the agenda.
 
 ### Can I install BeakerX with pip instead of conda?
 
-Yes, see the [instructions](/documentation#pip).  Our documentation
+Yes, see the [instructions](/documentation#installation-with-pip).  Our documentation
 focuses on conda for simplicity.
 
 ### Can I use BeakerX on win32?
