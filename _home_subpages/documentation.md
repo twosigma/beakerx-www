@@ -8,7 +8,7 @@ order: 3
 ### Tutorials and Examples
 
 Most of the documentation consists of
-[notebooks](http://nbviewer.jupyter.org/github/twosigma/beakerx/blob/master/doc/StartHere.ipynb)
+[notebooks](http://nbviewer.jupyter.org/github/twosigma/beakerx/blob/master/StartHere.ipynb)
 that show BeakerX's kernels and widgets in action.
 
 ### Installation with Conda
