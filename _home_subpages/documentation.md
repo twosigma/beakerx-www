@@ -25,6 +25,12 @@ conda install -y -c conda-forge ipywidgets
 conda install -y -c conda-forge beakerx
 ```
 
+### Installation for Jupyter Lab
+
+```
+jupyter labextension install beakerx-jupyterlab
+```
+
 ### Upgrading
 
 If you have an environment with a previous version of BeakerX, to

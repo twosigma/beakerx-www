@@ -8,6 +8,7 @@ text: > #
     - Widgets for time-series plotting, tables, forms, and more. There are Python and JavaScript APIs
       in addition to the JVM languages.
     - One-click publication with interactive plots and tables.
+    - Jupyter Lab
 
   A beta release of BeakerX is available via conda, pip, and docker. Or build the latest open source code on
   [github](https://github.com/twosigma/beakerx){:target="_blank"}.
