@@ -65,7 +65,7 @@ beakerx-install
 
 ### Running with Docker
 
-Docker is the most reliable way get run Jupyter and BeakerX since it's completely self contained.
+Docker is the most reliable way get and run Jupyter and BeakerX since it's completely self contained.
 
 ```
 docker run -p 8888:8888 beakerx/beakerx
