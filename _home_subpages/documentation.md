@@ -27,7 +27,14 @@ conda install -y -c conda-forge beakerx
 
 ### Installation for Jupyter Lab
 
+BeakerX support for Jupyter Lab is still alpha quality.
+You can try it as follows:
+
 ```
+conda create -y -n labx 'python>=3'
+source activate labx
+conda install -y -c conda-forge jupyterlab beakerx
+jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter labextension install beakerx-jupyterlab
 ```
 
