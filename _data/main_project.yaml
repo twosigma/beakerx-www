@@ -4,11 +4,11 @@ text: > #
   [Jupyter](http://jupyter.org/){:target="_blank"} interactive computing environment. It provides JVM support,
   interactive plots, tables, forms, publishing, and more.  BeakerX supports:
 
-    - Groovy, Scala, Clojure, Kotlin, Java, and SQL, including many magics and interactive widgets.
+    - Groovy, Scala, Clojure, Kotlin, Java, and SQL, including many magics.
     - Widgets for time-series plotting, tables, forms, and more. There are Python and JavaScript APIs
       in addition to the JVM languages.
     - One-click publication with interactive plots and tables.
-    - Jupyter Lab (alpha quality)
+    - Jupyter Lab (alpha quality).
 
   A beta release of BeakerX is available via conda, pip, and docker. Or build the latest code from
   [github](https://github.com/twosigma/beakerx){:target="_blank"}.
