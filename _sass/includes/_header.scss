@@ -32,6 +32,7 @@
 .globalHeader__menu {
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .globalHeader__menu__item {
@@ -50,5 +51,19 @@
 }
 
 .ts_logo {
-    margin-bottom: -11px;
+  @include size('width', 45px);
+  display: block;
+  svg {
+    @include size('width', 230px);
+  }
+  #g2 {
+    display: none;
+  }
+
+  @include breakpoint(tablet-landscape) {
+    width: initial;
+    #g2 {
+      display: initial;
+    }
+  }
 }
