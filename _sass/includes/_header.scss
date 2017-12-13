@@ -6,7 +6,7 @@
   background-color: $color-orange-light;
   @include size('padding', 30px);
 
-  @include breakpoint(tablet-landscape) {
+  @include breakpoint(desktop) {
     @include size('padding-left', 130px);
     @include size('padding-right', 130px);
   }
@@ -53,17 +53,25 @@
 .ts_logo {
   @include size('width', 45px);
   display: block;
-  svg {
+  overflow: hidden;
+  img {
     @include size('width', 230px);
-  }
-  #g2 {
-    display: none;
+    max-width: initial;
   }
 
   @include breakpoint(tablet-landscape) {
-    width: initial;
-    #g2 {
-      display: initial;
+    @include size('width', 68px);
+    img {
+      @include size('width', 356px);
     }
   }
+
+  @include breakpoint(desktop) {
+    @include size('width', 230px);
+    overflow: visible;
+    img {
+      @include size('width', 230px);
+    }
+  }
+
 }
