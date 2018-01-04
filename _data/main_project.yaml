@@ -15,8 +15,8 @@ text: > #
   [github](https://github.com/twosigma/beakerx){:target="_blank"}.
 
 github:
-    user: twosigma
-    project: beakerx
+  user: twosigma
+  project: beakerx
 icon: Beaker.svg
 logo: beakerx-logo.svg
 twitter: BeakerXNotebook
