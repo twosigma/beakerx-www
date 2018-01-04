@@ -1,0 +1,54 @@
+<section class="project">
+
+  <div class="project-header">
+    {% for repository in site.github.public_repositories %}
+    {% if include.project.github.project == repository.name %}
+    <span class="project-header__item project-header__item_github">
+      <a href="https://github.com/twosigma/beakerx" target="_blank">
+        {% include _icons/github.svg %}
+      </a>
+    </span>
+
+    <span class="project-header__item project-header__item_latest-release"
+          data-releases-url="{{ repository.releases_url }}">
+    </span>
+
+    <span class="project-header__item project-header__item_stars">
+      {% include _icons/star.svg %}
+      <span>{{ repository.stargazers_count }}</span>
+    </span>
+
+    <span class="project-header__item project-header__item_forks">
+      {% include _icons/fork.svg %}
+      <span>{{ repository.forks_count }}</span>
+    </span>
+
+    {% endif %}
+    {% endfor %}
+    {% if include.project.twitter %}
+
+    <span class="project-header__item project-header__item_twitter">
+      <a href="https://twitter.com/{{ include.project.twitter }}">
+        {% include _icons/twitter.svg %}
+      </a>
+    </span>
+    {% endif %}
+  </div>
+
+  <div class="projectDescription">
+    {{ include.project.text | markdownify }}
+  </div>
+
+</section>
+
+<aside class="project-aside">
+  {% for section in include.project.header %}
+  <header>
+    {% if section.icon %}
+    <span class="ico">{% include _icons/{{ section.icon }} %}</span>
+    {% endif %}
+    <h2>{{ section.title }}</h2>
+  </header>
+  {{ section.content | markdownify }}
+  {% endfor %}
+</aside>
