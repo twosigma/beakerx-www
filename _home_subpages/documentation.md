@@ -33,8 +33,8 @@ You can try it as follows:
 ```
 conda create -y -n labx 'python>=3'
 source activate labx
-conda install -y -c conda-forge jupyterlab beakerx
-jupyter labextension install @jupyter-widgets/jupyterlab-manager
+conda install -y -c conda-forge jupyterlab beakerx pytest
+jupyter labextension install @jupyter-widgets/jupyterlab-manager@0.31
 jupyter labextension install beakerx-jupyterlab
 ```
 
