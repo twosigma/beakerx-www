@@ -213,9 +213,9 @@ img {
     }
   }
 
-  .pages__item {
-    &_index {
-      display: flex !important;
+  .pages__item_index {
+    &.pages__item_active {
+      display: flex;
       flex-flow: row wrap;
       h1, h2, h3, h4, h5, h6 {
         flex-basis: 100%;
