@@ -84,8 +84,8 @@ var TSOS = TSOS || {};
     $clickedLiEl.addClass('active');
 
 
-    this.$contentEl.find('.pageSection').removeClass('active');
-    $('#' + content_id).addClass('active');
+    this.$contentEl.find('.pages__item').removeClass('pages__item_active');
+    $('#' + content_id).addClass('pages__item_active');
   };
 
   // Helpers
