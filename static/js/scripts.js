@@ -1,14 +1,13 @@
 var TSOS = TSOS || {};
 
 (function(window, $, APP) {
-
   // LatestReleaseComponent
   // ---------------------------------------------
   function LatestReleaseComponent () {
-
-    this.$el = $('.latestRelease').first();
-    this.githubEndpoinUrl = this.$el.data('releases-url').replace('{/id}', '/latest');
-
+    this.$el = $('.project-header__item_latest-release').first();
+    this.githubEndpoinUrl = this.$el
+        .data('releases-url')
+        .replace('{/id}', '/latest');
   }
 
   LatestReleaseComponent.prototype.run = function() {
@@ -16,9 +15,9 @@ var TSOS = TSOS || {};
 
     this.fetch(function(err, data) {
       if (err) { return; }
-      self.render(data.url, data.tag);
-    });
-  };
+        self.render(data.url, data.tag);
+      });
+    };
 
   LatestReleaseComponent.prototype.fetch = function(callback) {
     $.ajax(this.githubEndpoinUrl)
@@ -44,18 +43,18 @@ var TSOS = TSOS || {};
 
   // SubPagesComponent
   // ---------------------------------------------
-  function SubPagesComponent ($el) {
+  function PagesComponent ($el) {
     this.$el = $el;
-    this.$navEl = $el.find('.mainNav');
-    this.$contentEl = $el.find('.contentWrapper');
+    this.$navEl = $el.filter('.pages-navigation');
+    this.$contentEl = $el.filter('.pages-wrapper');
   }
 
-  SubPagesComponent.prototype.init = function() {
+  PagesComponent.prototype.init = function() {
     $(window).bind('popstate', this.onPopStateHandler.bind(this));
     this.$navEl.find('a').on('click', this.onClickHandler.bind(this));
   };
 
-  SubPagesComponent.prototype.onClickHandler = function(event) {
+  PagesComponent.prototype.onClickHandler = function(event) {
     var $clickedEl = $(event.target);
     var content_id = $clickedEl.data('content-id');
 
@@ -69,7 +68,7 @@ var TSOS = TSOS || {};
     return false;
   };
 
-  SubPagesComponent.prototype.onPopStateHandler = function(event) {
+  PagesComponent.prototype.onPopStateHandler = function(event) {
     var state = event.originalEvent.state;
     if (state === null) { return; }
     var content_id = state.content_id;
@@ -78,13 +77,12 @@ var TSOS = TSOS || {};
     this._changeComponentState($clickedEl, content_id);
   };
 
-  SubPagesComponent.prototype._changeComponentState = function($clickedEl, content_id) {
+  PagesComponent.prototype._changeComponentState = function($clickedEl, content_id) {
     var $clickedLiEl = $clickedEl.parents('li');
 
     this.$navEl.find('li').removeClass('active');
     $clickedLiEl.addClass('active');
 
-    this.$contentEl.removeClass('overview subpage').addClass($clickedEl.data('wrapper-class'));
 
     this.$contentEl.find('.pageSection').removeClass('active');
     $('#' + content_id).addClass('active');
@@ -94,12 +92,12 @@ var TSOS = TSOS || {};
   // ---------------------------------------------
   APP.helpers = {
 
-    initLatestReleaseComponent : function() {
+    initLatestReleaseComponent: function() {
       new LatestReleaseComponent().run();
     },
 
-    initSubPagesComponent: function() {
-      new SubPagesComponent($('#subPagesWrapper')).init();
+    initPagesComponent: function() {
+      new PagesComponent($('.pages-wrapper, .pages-navigation')).init();
     }
 
   };
@@ -108,6 +106,7 @@ var TSOS = TSOS || {};
   // -----------------------------
   $(function() {
     APP.helpers.initLatestReleaseComponent();
-    APP.helpers.initSubPagesComponent();
+    APP.helpers.initPagesComponent();
   });
+
 }(window, jQuery, TSOS, undefined));

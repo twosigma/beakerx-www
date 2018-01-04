@@ -1,5 +1,5 @@
 {% assign sorted_pages = site.home_subpages | sort:"order" %}
-<nav class="pages__navigation">
+<nav class="pages-navigation">
   <ul>
     {% for item in sorted_pages %}
     {% assign subpage_section_id="js--subpage-" | append:item.slug %}
@@ -11,7 +11,7 @@
   </ul>
 </nav>
 
-<section class="pages__wrapper">
+<section class="pages-wrapper">
   {% for item in sorted_pages %}
   {% assign subpage_section_id="js--subpage-" | append:item.slug %}
   {%- capture section_classes %}pages__item pages__item_{{ item.slug }}{% if item.url == page.url %} pages__item_active{% endif %}{% endcapture -%}
