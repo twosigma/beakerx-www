@@ -14,7 +14,7 @@
 <section class="pages__wrapper">
   {% for item in sorted_pages %}
   {% assign subpage_section_id="js--subpage-" | append:item.slug %}
-  {%- capture section_classes %}pages__item page__item-{{ item.slug }}{% if item.url == page.url %} pages__item_active{% endif %}{% endcapture -%}
+  {%- capture section_classes %}pages__item pages__item_{{ item.slug }}{% if item.url == page.url %} pages__item_active{% endif %}{% endcapture -%}
   <article id="{{ subpage_section_id }}" class="{{ section_classes }}">
     {{ item.content | markdownify }}
   </article>
