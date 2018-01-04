@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bx-color-orange-dark: #e44f0c;
+  --bx-color-orange-light: #e37222;
+  --bx-color-orange: #e46017;
+  --bx-color-white: #ffffff;
+  --bx-color-gray-dark: #4b4f51;
+  --bx-color-gray-light: #c3c3c3;
+}
+
+body {
+  background-color: var(--bx-color-orange-dark);
+}
+
+code {
+  border-radius: 5px;
+  display: block;
+
+  .home & {
+    background-color: var(--bx-color-orange-light);
+    border: var(--bx-color-orange-dark) 1px solid;
+  }
+
+  .pages-wrapper & {
+    background-color: var(--bx-color-orange-dark);
+    border: var(--bx-color-gray-light) 1px solid;
+  }
+}
+
+hr {
+  .pages-wrapper & {
+    border-top: 1px solid var(--bx-color-white);
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    position: relative;
+
+    &:before, &:after {
+      border-style: solid;
+      content: "";
+      display: block;
+      height: 0;
+      position: absolute;
+      width: 0;
+    }
+
+    &:before {
+      border-color: var(--bx-color-white) transparent transparent transparent;
+      border-width: 30px 30px 0 30px;
+      left: 0;
+      top: 0;
+    }
+
+    &:after {
+      left: 2px;
+      top: 0;
+      border-color: var(--bx-color-orange-light) transparent transparent transparent;
+      border-width: 28px 28px 0 28px;
+    }
+  }
+}
+
+.home {
+  background-color: var(--bx-color-orange);
+}
+
+.page-header {
+  background-color: var(--bx-color-orange-light);
+}
+
+.pages-navigation {
+  background-color: var(--bx-color-orange-dark);
+}
+
+.pages-wrapper {
+  background-color: var(--bx-color-orange-light);
+}
+
+.pages__item_index {
+  h1, h2, h3, h4, h5, h6 {
+    + p {
+      border-bottom: 30px solid var(--bx-color-orange-dark);
+    }
+  }
+}
+
+.page-footer {
+  background-color: var(--bx-color-orange-dark);
+}
+
+@media (min-width: 961px) {
+  .pages-navigation {
+    .active {
+      position: relative;
+      &:after {
+        border: 30px solid transparent;
+        border-bottom-width: 0;
+        border-top-color: var(--bx-color-orange-dark);
+        bottom: -29px;
+        content: "";
+        display: block;
+        left: 50%;
+        margin-left: -30px;
+        position: absolute;
+      }
+    }
+  }
+}
