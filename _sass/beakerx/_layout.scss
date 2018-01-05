@@ -2,16 +2,18 @@ body {
   padding: 0 20px;
 }
 
-pre {
-  overflow: auto;
-}
-
 code {
   padding: 2px 10px;
   margin: 10px 0;
 
   .pages-wrapper & {
     padding: 10px;
+  }
+
+  pre & {
+    overflow: auto;
+    margin-bottom: 0;
+    width: 100%;
   }
 }
 
@@ -54,11 +56,12 @@ img {
   &__tsos-logo {
     display: inline-block;
 
-    @include size('max-width', 68px);
+    @include size('width', 68px);
+    margin-left: 30px;
     overflow: hidden;
     img {
       display: block;
-      height: 68px;
+      height: 57px;
       max-width: unset;
     }
   }
@@ -193,6 +196,8 @@ img {
       display: block;
 
       @include size('max-width', 230px);
+      margin: 0;
+      width: unset;
       img {
         max-width: 100%;
         height: auto;
