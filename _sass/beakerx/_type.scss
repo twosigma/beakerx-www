@@ -1,5 +1,5 @@
 body {
-  color: var(--bx-color-white);
+  color: $color-white;
   font-family: "Lato", sans-serif;
   font-weight: 400;
 }
@@ -16,14 +16,14 @@ code {
 }
 
 a {
-  color: var(--bx-color-white);
+  color: $color-white;
   transition: all 0.2s ease;
   text-decoration: none;
 
   .project-description &,
   .project-aside &,
   .pages-wrapper & {
-    border-bottom: 1px solid var(--bx-color-white);
+    border-bottom: 1px solid $color-white;
 
     &:hover {
       border-bottom-color: transparent;
@@ -38,30 +38,30 @@ a {
     text-transform: uppercase;
     font-weight: 700;
     &:hover {
-      color: var(--bx-color-gray-dark);
+      color: $color-gray-dark;
     }
   }
 
   .pages-navigation .active &,
   .page-footer & {
-    color: var(--bx-color-gray-dark);
+    color: $color-gray-dark;
   }
 }
 
 svg {
   .project-header__item & {
-    fill: var(--bx-color-white);
+    fill: $color-white;
     @include size('height', 16px);
   }
 
   .page-footer & {
-    fill: var(--bx-color-white);
+    fill: $color-white;
     transition: fill 0.5s ease;
     @include size('width', 20px);
   }
 
   .page-footer a:hover & {
-    fill: var(--bx-color-gray-dark);
+    fill: $color-gray-dark;
   }
 }
 
@@ -92,12 +92,12 @@ svg {
   }
 }
 .page-footer {
-  color: var(--bx-color-gray-dark);
+  color: $color-gray-dark;
   @include size('font-size', 12px);
   @include size('line-height', 16px);
 
   &__social {
-    border-bottom: 1px solid var(--bx-color-orange);
+    border-bottom: 1px solid $color-orange;
     @include size('padding-bottom', 20px);
 
     ul {

@@ -51,18 +51,22 @@ img {
   &__logo {
     display: inline-block;
     @include size('width', 230px);
+
+    svg {
+      max-width: 100%;
+    }
   }
 
   &__tsos-logo {
     display: inline-block;
 
-    @include size('width', 68px);
+    @include size('width', 47px);
     margin-left: 30px;
     overflow: hidden;
     img {
       display: block;
-      height: 57px;
-      max-width: unset;
+      height: 47px;
+      max-width: initial;
     }
   }
 }
@@ -131,7 +135,7 @@ img {
   a {
     display: block;
     padding: 30px;
-    border: 0 solid var(--bx-color-orange);
+    border: 0 solid $color-orange;
     border-bottom-width: 1px;
   }
 }
@@ -197,7 +201,7 @@ img {
 
       @include size('max-width', 230px);
       margin: 0;
-      width: unset;
+      width: initial;
       img {
         max-width: 100%;
         height: auto;
@@ -206,7 +210,7 @@ img {
   }
 
   .project-aside {
-    border-left: 20px solid var(--bx-color-orange-dark);
+    border-left: 20px solid $color-orange-dark;
   }
 
   .pages-navigation {
@@ -226,7 +230,7 @@ img {
         flex-basis: 100%;
         + p {
           border-bottom-width: 0;
-          border-right: 20px solid var(--bx-color-orange-dark);
+          border-right: 20px solid $color-orange-dark;
           padding: 0 30px 0 0;
           + p {
             padding: 0 0 0 30px;
