@@ -1,11 +1,11 @@
 <footer class="page-footer">
   <div class="page-footer__social">
     <ul>
-    {% for link in site.data.footer.links %}
+    {%- for link in site.data.footer.links -%}
       <li>
-        <a href="{{ link.url }}" target="_blank">{% include _icons/{{ link.icon }} %}</a>
+        <a href="{{ link.url }}" target="_blank">{%- include _icons/{{ link.icon }} -%}</a>
       </li>
-    {% endfor %}
+    {%- endfor -%}
     </ul>
   </div>
   <div class="page-footer__legal">
