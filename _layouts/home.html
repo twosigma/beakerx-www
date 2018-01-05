@@ -12,17 +12,13 @@
     <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-  <main class="home fadeIn">
+<main class="home">
     {%- include header.html -%}
-    <header class="pageHeader" data-js-component="pageHeader">
-      {%- include _home/projectHeader.html project=site.data.main_project -%}
-    </header>
-
-    {%- include _home/subPages.html -%}
-
+    {%- include _home/project.html project=site.data.main_project -%}
+    {%- include _home/pages.html -%}
     {%- include footer.html -%}
-  </main>
-  <script src="/static/js/jquery-3.2.0.min.js"></script>
-  <script src="/static/js/scripts.js"></script>
+</main>
+<script src="/static/js/jquery-3.2.0.min.js"></script>
+<script src="/static/js/scripts.js"></script>
 </body>
 </html>

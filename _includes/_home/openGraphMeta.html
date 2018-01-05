@@ -1,6 +1,6 @@
-{% capture og_url %}{% if page.id == '/index' %}{{ site.url }}{% else %}{{ page.url }}{% endif %}{% endcapture %}
-{% assign og_description =  "A collection of kernels and extensions to the Jupyter interactive computing environment, providing JVM support, interactive plots, tables, forms, publishing, and more." %}
-{% assign og_image =  "static/img/og_banner_1200x630.png" %}
+{%- capture og_url -%}{%- if page.id == '/index' -%}{{ site.url }}{%- else -%}{{ page.url }}{%- endif -%}{%- endcapture -%}
+{%- assign og_description =  "A collection of kernels and extensions to the Jupyter interactive computing environment, providing JVM support, interactive plots, tables, forms, publishing, and more." -%}
+{%- assign og_image =  "static/img/og_banner_1200x630.png" -%}
 <meta property="og:url" content="{{ og_url | absolute_url }}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ page.title }}">
