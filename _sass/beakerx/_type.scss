@@ -1,13 +1,13 @@
 body {
   color: $color-white;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-family: $font-primary;
+  font-weight: $font-regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: "Roboto Mono", monospace;
+  font-family: $font-secondary;
 
   .home & {
     @include size('font-size', 18px);
@@ -15,6 +15,14 @@ code {
   .pages-wrapper & {
     @include size('line-height', 26px);
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-extra-bold;
+}
+
+b, strong {
+  font-weight: $font-extra-bold;
 }
 
 a {
@@ -38,7 +46,7 @@ a {
 
   .pages-navigation & {
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: $font-bold;
     &:hover {
       color: $color-gray-dark;
     }
@@ -78,7 +86,7 @@ svg {
   h2 {
     margin: 0;
     @include size('font-size', 20px);
-    font-weight: 700;
+    font-weight: $font-bold;
 
   }
 }

@@ -4,3 +4,27 @@ $color-orange: #e46017;
 $color-white: #ffffff;
 $color-gray-dark: #4b4f51;
 $color-gray-light: #c3c3c3;
+
+$breakpoints: (
+  "phone-portrait": 321px,
+  "phone-landscape": 481px,
+  "tablet-portrait": 601px,
+  "tablet-landscape": 769px,
+  "desktop": 961px,
+  "desktop-large": 1280px,
+);
+
+$breakpoint-directions: (
+  "min": "min-width",
+  "max": "max-width"
+);
+
+$default-breakpoint: root;
+$current-breakpoint: $default-breakpoint;
+
+$font-primary: 'Lato', sans-serif;
+$font-secondary: 'Roboto Mono', monospace;
+$font-light: 300;
+$font-regular: 400;
+$font-bold: 700;
+$font-extra-bold: 900;
