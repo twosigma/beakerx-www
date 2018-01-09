@@ -85,7 +85,7 @@ hr {
   background-color: $color-orange-dark;
 }
 
-@media (min-width: 961px) {
+@include breakpoint(desktop) {
   .pages-navigation {
     .active {
       position: relative;
