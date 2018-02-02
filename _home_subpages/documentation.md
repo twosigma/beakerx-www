@@ -48,9 +48,9 @@ conda update -c conda-forge beakerx
 
 ## Running BeakerX
 
-Start Jupyter with
+Start it with
 ```
-jupyter notebook
+beakerx
 ```
 and then use the "New" menu to create a notebook in the language of your choice.
 
@@ -60,7 +60,14 @@ You can also install BeakerX with [pip](https://pypi.python.org/pypi/pip).
 
 ```
 pip install beakerx
-beakerx-install
+beakerx install
+```
+
+## Uninstallation with Pip
+
+```
+beakerx uninstall
+pip uninstall beakerx
 ```
 
 ## Running with Docker
