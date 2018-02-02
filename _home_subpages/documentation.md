@@ -50,6 +50,10 @@ conda update -c conda-forge beakerx
 
 Start it with
 ```
+jupyter notebook
+```
+or just
+```
 beakerx
 ```
 and then use the "New" menu to create a notebook in the language of your choice.
