@@ -95,4 +95,6 @@ beakerx bkr2ipynb *.bkr
 
 We welcome developers to extend and improve BeakerX in ways that can
 benefit everyone.  Please see the
-[README](https://github.com/twosigma/beakerx) for more information.
+[README](https://github.com/twosigma/beakerx) and
+[CONTRIBUTING](https://github.com/twosigma/beakerx/blob/master/CONTRIBUTING.md)
+files for more information.
