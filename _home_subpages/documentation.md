@@ -27,7 +27,6 @@ conda install -y -c conda-forge beakerx
 
 ## Installation for Jupyter Lab
 
-BeakerX support for Jupyter Lab is still alpha quality.
 You can try it as follows:
 
 ```
