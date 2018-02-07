@@ -18,6 +18,9 @@ Jupyter and BeakerX, and to manage your Python environments.  BeakerX
 works with Python 3.5 and above.  Conda forge hosts the [lastest
 version](https://anaconda.org/conda-forge/beakerx).
 
+Note: on Windows use pip (see below) until
+[#6793](https://github.com/twosigma/beakerx/issues/6793) is resolved.
+
 ```
 conda create -y -n beakerx 'python>=3'
 source activate beakerx
