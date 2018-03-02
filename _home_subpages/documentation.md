@@ -21,8 +21,8 @@ version](https://anaconda.org/conda-forge/beakerx).
 ```
 conda create -y -n beakerx 'python>=3'
 source activate beakerx
-conda install -y -c conda-forge ipywidgets
-conda install -y -c conda-forge beakerx
+conda config --env --add pinned_packages 'openjdk>8.0.121'
+conda install -y -c conda-forge ipywidgets beakerx
 ```
 
 ## Installation for Jupyter Lab
@@ -32,6 +32,7 @@ You can try it as follows:
 ```
 conda create -y -n labx 'python>=3'
 source activate labx
+conda config --env --add pinned_packages 'openjdk>8.0.121'
 conda install -y -c conda-forge jupyterlab beakerx
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 jupyter labextension install beakerx-jupyterlab
