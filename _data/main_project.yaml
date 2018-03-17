@@ -11,7 +11,7 @@ text: > #
     - Jupyter Lab.
 
   A beta release of BeakerX is available via conda, pip, and docker;
-  or run it live online with
+  or try it live online with
   [Binder](https://mybinder.org/v2/gh/twosigma/beakerx/0.14.0?filepath=StartHere.ipynb).
 
 github:
