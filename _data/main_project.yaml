@@ -10,9 +10,11 @@ text: > #
     - One-click publication with interactive plots and tables, and
     - Jupyter Lab.
 
-  A beta release of BeakerX is available via conda, pip, and docker;
-  or try it live online with
-  [Binder](https://mybinder.org/v2/gh/twosigma/beakerx/0.14.0?filepath=StartHere.ipynb).
+  A beta release of BeakerX is available via conda, pip, and docker.
+
+
+  Or try it live online with [Binder](https://mybinder.org/v2/gh/twosigma/beakerx/0.14.0?filepath=StartHere.ipynb).
+
 
 github:
   user: twosigma
