@@ -13,7 +13,7 @@ text: > #
   A beta release of BeakerX is available via conda, pip, and docker.
 
 
-  Or try it live online with [Binder](https://mybinder.org/v2/gh/twosigma/beakerx/0.16.1?filepath=StartHere.ipynb).
+  Or try it live online with [Binder](https://mybinder.org/v2/gh/twosigma/beakerx/0.17.1?filepath=StartHere.ipynb).
 
 
 github:
