@@ -45,8 +45,8 @@ The GUI has links to documentation and the standard Spark web UI.
 ***
 ## Publication
 
-![image title](/static/img/publication.png)
-
 With a single click, convert the current notebook's contents including
 any interactive widgets to a Github gist. A new tab opens nbviewer on
 it, including the active widgets.  This is a link you can send anyone.
+
+![image title](/static/img/publication.png)
