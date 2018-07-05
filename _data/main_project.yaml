@@ -2,11 +2,12 @@ title: BeakerX
 text: > #
   BeakerX is a collection of kernels and extensions to the
   [Jupyter](http://jupyter.org/){:target="_blank"} interactive computing environment. It provides JVM support,
-  Spark cluster support, interactive plots, tables, forms, publishing, and more.  BeakerX supports:
+  Spark cluster support, polyglot programming, interactive plots, tables, forms, publishing, and more.  BeakerX supports:
 
     - Groovy, Scala, Clojure, Kotlin, Java, and SQL, including many magics;
     - Widgets for time-series plotting, tables, forms, and more (there are Python and JavaScript APIs
       in addition to the JVM languages);
+    - Polyglot magics and autotranslation, allowing you access multiple languages in the same noteobok, and seamlessly communicate between them;
     - [Apache Spark](https://spark.apache.org/){:target="_blank"} integration including GUI configuration, status, progress, interrupt, and tables;
     - One-click publication with interactive plots and tables, and
     - Jupyter Lab.
