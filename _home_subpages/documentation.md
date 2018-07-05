@@ -15,7 +15,7 @@ that show BeakerX's kernels and widgets in action.
 
 We recommend [conda](https://www.anaconda.com/download/) to install
 Jupyter and BeakerX, and to manage your Python environments.  BeakerX
-works with Python 3.5 and above.  Conda forge hosts the [lastest
+works with Python 3.4 and above.  Conda forge hosts the [lastest
 version](https://anaconda.org/conda-forge/beakerx).
 
 ```
@@ -27,7 +27,9 @@ conda install -y -c conda-forge ipywidgets beakerx
 
 ## Installation for Jupyter Lab
 
-You can try it as follows:
+You can try it as follows.  Note that [installing Lab extensions
+requires
+npm](http://jupyterlab.readthedocs.io/en/stable/user/extensions.html).
 
 ```
 conda create -y -n labx 'python>=3'
