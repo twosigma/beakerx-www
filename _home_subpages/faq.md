@@ -31,11 +31,8 @@ programming, and for autotranslating data between languages.  These
 features have been the most difficult to fit into Jupyter.
 
 BeakerX has polyglot magics to allow running multiple languages in the
-same notebook.
-
-BeakerX has a prototype implementation of autotranslation that works
-between Python and JavaScript, and the JVM languages and JavaScript.
-A more complete implementation is on the agenda.
+same notebook, and it supports bidirectional autotranslation as well,
+however its implementation is not yet as complete as the original.
 
 ## Can I install BeakerX with pip instead of conda?
 
