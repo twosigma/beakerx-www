@@ -11,6 +11,11 @@ Most of the documentation consists of
 [notebooks](http://nbviewer.jupyter.org/github/twosigma/beakerx/blob/master/StartHere.ipynb)
 that show BeakerX's kernels and widgets in action.
 
+## Cheatsheet
+
+Here is a [cheatsheet](https://github.com/twosigma/beakerx/raw/master/doc/Cheatsheet.pdf)
+for a quick overview of BeakerX functionalities.
+
 ## Installation with Conda
 
 We recommend [conda](https://www.anaconda.com/download/) to install
