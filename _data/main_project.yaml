@@ -7,7 +7,7 @@ text: > #
     - Groovy, Scala, Clojure, Kotlin, Java, and SQL, including many magics;
     - Widgets for time-series plotting, tables, forms, and more (there are Python and JavaScript APIs
       in addition to the JVM languages);
-    - Polyglot magics and autotranslation, allowing you to access multiple languages in the same noteobook, and seamlessly communicate between them;
+    - Polyglot magics and autotranslation, allowing you to access multiple languages in the same notebook, and seamlessly communicate between them;
     - [Apache Spark](https://spark.apache.org/){:target="_blank"} integration including GUI configuration, status, progress, interrupt, and tables;
     - One-click publication with interactive plots and tables, and
     - Jupyter Lab.
