@@ -32,6 +32,9 @@ conda install -y -c conda-forge ipywidgets beakerx
 
 ## Installation for Jupyter Lab
 
+**Important Note: BeakerX currently supports JupyterLab 1.x only.**
+(Installing the extension will break later versions of JupyterLab.)
+
 You can try it as follows.  Note that [installing Lab extensions
 requires
 npm](http://jupyterlab.readthedocs.io/en/stable/user/extensions.html).
